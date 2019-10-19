@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 cat << EOF > "README.md"
-# skyzyx/ffmpeg/ffmpeg-skyzyx
+# homebrew-ffmpeg
 
 A build of FFMPEG which supports more than the official Homebrew build.
 
@@ -21,8 +21,18 @@ brew install https://raw.githubusercontent.com/skyzyx/homebrew-ffmpeg/master/For
 
 ### Build Configuration
 
-\`\`\`
-./configure $(cat docs/buildconf.txt | tr "\n" " ")
+\`\`\`bash
+LIBFFI_CFLAGS=-I/usr/include/ffi \\
+LIBFFI_LIBS=-lffi \\
+GLIB_CFLAGS="-I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include" \\
+GLIB_LIBS="-lglib-2.0 -lgio-2.0" \\
+CFLAGS=\`freetype-config --cflags\` \\
+LDFLAGS=\`freetype-config --libs\` \\
+PKG_CONFIG_PATH=\$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/opt/X11/lib/pkgconfig \\
+./configure \\
+$(cat docs/buildconf.txt | xargs -I% echo '    % \')
+&& make -j\$(nproc) ffmpeg \\
+&& make install
 \`\`\`
 
 ### Decode
