@@ -98,7 +98,7 @@ class FfmpegSkyzyx < Formula
 
     args = %W[
       --prefix="#{prefix}"
-      --cc="#{ENV.cc.strip}"
+      --cc=/usr/bin/clang
       --host-cflags="#{ENV.cflags.strip}"
       --host-ldflags="#{ENV.ldflags.strip}"
       --arch=x86_64
