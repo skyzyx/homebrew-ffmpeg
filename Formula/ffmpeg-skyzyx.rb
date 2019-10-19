@@ -97,7 +97,7 @@ class FfmpegSkyzyx < Formula
     ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
     args = %W[
-      --prefix="#{prefix.strip}"
+      --prefix="#{prefix}"
       --cc="#{ENV.cc.strip}"
       --host-cflags="#{ENV.cflags.strip}"
       --host-ldflags="#{ENV.ldflags.strip}"
