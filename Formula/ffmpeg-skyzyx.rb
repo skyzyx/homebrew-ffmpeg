@@ -78,8 +78,8 @@ class FfmpegSkyzyx < Formula
     ENV.append_to_cflags "-fno-stack-check" if DevelopmentTools.clang_build_version >= 1010
 
     # FreeType
-    ENV.append_to_cflags `freetype-config --cflags`
-    ENV.append "LDFLAGS", `freetype-config --libs`
+    ENV.append_to_cflags "`freetype-config --cflags`"
+    ENV.append "LDFLAGS", "`freetype-config --libs`"
 
     # FFI
     ENV.append "LIBFFI_CFLAGS", "-I/usr/include/ffi"
