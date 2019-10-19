@@ -1,3 +1,5 @@
+require 'etc'
+
 class FfmpegSkyzyx < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
@@ -266,7 +268,7 @@ class FfmpegSkyzyx < Formula
 
     # system "LIBFFI_CFLAGS=\"#{ENV["LIBFFI_CFLAGS"]}\"", "LIBFFI_LIBS=\"#{ENV["LIBFFI_LIBS"]}\"", "GLIB_CFLAGS=\"#{ENV["GLIB_CFLAGS"]}\"", "GLIB_LIBS=\"#{ENV["GLIB_LIBS"]}\"", "./configure", *args
     system "./configure", *args
-    system "make", "-j#{nproc}", "ffmpeg"
+    system "make", "-j#{Etc.nprocessors}", "ffmpeg"
     system "make", "install"
 
     # Build and install additional FFmpeg tools
