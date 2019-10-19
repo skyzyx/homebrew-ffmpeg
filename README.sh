@@ -7,9 +7,9 @@ A build of FFMPEG which supports more than the official Homebrew build.
 
 ## Installation
 
-\`brew install skyzyx/taps/ffmpeg-skyzyx\`
+\`brew install skyzyx/ffmpeg/ffmpeg-skyzyx\`
 
-Or \`brew tap skyzyx/taps\` and then \`brew install ffmpeg-skyzyx\`.
+Or \`brew tap skyzyx/ffmpeg\` and then \`brew install ffmpeg-skyzyx\`.
 
 Or install via URL (which will not receive updates):
 
