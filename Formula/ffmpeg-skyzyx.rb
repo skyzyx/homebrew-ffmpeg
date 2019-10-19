@@ -92,9 +92,9 @@ class FfmpegSkyzyx < Formula
     ENV.append "GLIB_LIBS", "-lgio-2.0"
 
     # pkg-config
-    ENV.append "PKG_CONFIG_PATH", "/usr/local/lib/pkgconfig"
-    ENV.append "PKG_CONFIG_PATH", "/usr/lib/pkgconfig"
-    ENV.append "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
+    ENV.append_path "PKG_CONFIG_PATH", "/usr/local/lib/pkgconfig"
+    ENV.append_path "PKG_CONFIG_PATH", "/usr/lib/pkgconfig"
+    ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
     args = %W[
       --prefix=#{prefix}
@@ -264,7 +264,7 @@ class FfmpegSkyzyx < Formula
       --extra-version=skyzyx
     ]
 
-    system "./configure", *args
+    system "LIBFFI_CFLAGS", ENV["LIBFFI_CFLAGS"], "LIBFFI_LIBS", ENV["LIBFFI_LIBS"], "GLIB_CFLAGS", ENV["GLIB_CFLAGS"], "GLIB_LIBS", ENV["GLIB_LIBS"], "./configure", *args
     system "make", "-j", `nproc`, "ffmpeg"
     system "make", "install"
 
