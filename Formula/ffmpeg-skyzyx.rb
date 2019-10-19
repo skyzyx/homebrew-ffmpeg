@@ -97,10 +97,10 @@ class FfmpegSkyzyx < Formula
     ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
     args = %W[
-      --prefix=#{prefix}
-      --cc=#{ENV.cc}
-      --host-cflags=#{ENV.cflags}
-      --host-ldflags=#{ENV.ldflags}
+      --prefix="#{prefix}"
+      --cc="#{ENV.cc}"
+      --host-cflags="#{ENV.cflags}"
+      --host-ldflags="#{ENV.ldflags}"
       --arch=x86_64
       --cpu=native
       --disable-htmlpages
@@ -264,7 +264,8 @@ class FfmpegSkyzyx < Formula
       --extra-version=skyzyx
     ]
 
-    system "LIBFFI_CFLAGS=\"#{ENV["LIBFFI_CFLAGS"]}\"", "LIBFFI_LIBS=\"#{ENV["LIBFFI_LIBS"]}\"", "GLIB_CFLAGS=\"#{ENV["GLIB_CFLAGS"]}\"", "GLIB_LIBS=\"#{ENV["GLIB_LIBS"]}\"", "./configure", *args
+    # system "LIBFFI_CFLAGS=\"#{ENV["LIBFFI_CFLAGS"]}\"", "LIBFFI_LIBS=\"#{ENV["LIBFFI_LIBS"]}\"", "GLIB_CFLAGS=\"#{ENV["GLIB_CFLAGS"]}\"", "GLIB_LIBS=\"#{ENV["GLIB_LIBS"]}\"", "./configure", *args
+    system "./configure", *args
     system "make", "-j", `nproc`, "ffmpeg"
     system "make", "install"
 
