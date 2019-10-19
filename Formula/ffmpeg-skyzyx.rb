@@ -97,10 +97,10 @@ class FfmpegSkyzyx < Formula
     ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
     args = %W[
-      --prefix="#{prefix}"
-      --cc="#{ENV.cc}"
-      --host-cflags="#{ENV.cflags}"
-      --host-ldflags="#{ENV.ldflags}"
+      --prefix="#{prefix.strip}"
+      --cc="#{ENV.cc.strip}"
+      --host-cflags="#{ENV.cflags.strip}"
+      --host-ldflags="#{ENV.ldflags.strip}"
       --arch=x86_64
       --cpu=native
       --disable-htmlpages
