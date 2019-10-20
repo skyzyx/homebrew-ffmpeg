@@ -12,6 +12,8 @@ class FfmpegSkyzyx < Formula
     sha256 "2b7eec4f955480a95ffe1e11f8abaf8bba98f221ae040c4737afd0c63657bed7" => :high_sierra
   end
 
+  conflicts_with "ffmpeg", :because => "ffmpeg-skyzyx also ships a ffmpeg binary"
+
   depends_on "nasm" => :build
   depends_on "pkg-config" => :build
   depends_on "texi2html" => :build
@@ -266,7 +268,7 @@ class FfmpegSkyzyx < Formula
 
     # system "LIBFFI_CFLAGS=\"#{ENV["LIBFFI_CFLAGS"]}\"", "LIBFFI_LIBS=\"#{ENV["LIBFFI_LIBS"]}\"", "GLIB_CFLAGS=\"#{ENV["GLIB_CFLAGS"]}\"", "GLIB_LIBS=\"#{ENV["GLIB_LIBS"]}\"", "./configure", *args
     system "./configure", *args
-    system "make", "install"
+    system "make"
 
     # Build and install additional FFmpeg tools
     system "make", "alltools"
