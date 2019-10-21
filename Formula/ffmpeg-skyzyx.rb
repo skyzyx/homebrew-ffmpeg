@@ -100,8 +100,6 @@ class FfmpegSkyzyx < Formula
     ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
     # Add all GNU versions of CLI tools to the PATH
-    ohai "Discovering the GNU versions of tools that are available..."
-    ohai `which make`
     # Dir.glob("/usr/local/opt/*/libexec/gnubin") do | dir |
     #   ohai dir
     #   ENV.prepend_path "PATH", dir
@@ -109,15 +107,11 @@ class FfmpegSkyzyx < Formula
 
     args = %W[
       --prefix="#{prefix}"
-      --cc=/usr/bin/clang
-      --host-cflags="#{ENV.cflags.strip}"
-      --host-ldflags="#{ENV.ldflags.strip}"
-      --arch=x86_64
-      --cpu=native
       --disable-htmlpages
       --disable-podpages
       --disable-txtpages
       --enable-avisynth
+      --enable-avresample
       --enable-chromaprint
       --enable-decoder=aac
       --enable-decoder=ac3
@@ -270,15 +264,20 @@ class FfmpegSkyzyx < Formula
       --enable-muxer=webp
       --enable-muxer=webvtt
       --enable-nonfree
+      --enable-pthreads
+      --enable-shared
       --enable-small
       --enable-version3
       --extra-version=skyzyx
+      --cc=#{ENV.cc}
+      --host-cflags="#{ENV.cflags.strip}"
+      --host-ldflags="#{ENV.ldflags.strip}"
     ]
 
     ENV.deparallelize
     system "./configure", *args
-    system "/usr/local/opt/make/libexec/gnubin/make"
-    system "/usr/local/opt/make/libexec/gnubin/make", "install"
+    system "make"
+    system "make", "install"
 
     # Build and install additional FFmpeg tools
     # system "make", "alltools"
