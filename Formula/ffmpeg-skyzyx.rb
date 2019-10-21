@@ -100,7 +100,7 @@ class FfmpegSkyzyx < Formula
     ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
     # Add all GNU versions of CLI tools to the PATH
-    Dir.glob("/usr/local/opt/**/gnubin") { |d| ENV.prepend_path "PATH" "#{d}" }
+    Dir.glob("/usr/local/opt/*/libexec/gnubin") { |d| ENV.prepend_path "PATH" "#{d}" }
 
     args = %W[
       --prefix="#{prefix}"
