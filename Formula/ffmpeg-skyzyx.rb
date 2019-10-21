@@ -101,10 +101,11 @@ class FfmpegSkyzyx < Formula
 
     # Add all GNU versions of CLI tools to the PATH
     ohai "Discovering the GNU versions of tools that are available..."
-    Dir.glob("/usr/local/opt/*/libexec/gnubin") do | dir |
-      ohai dir
-      ENV.prepend_path "PATH", dir
-    end
+    ohai `which make`
+    # Dir.glob("/usr/local/opt/*/libexec/gnubin") do | dir |
+    #   ohai dir
+    #   ENV.prepend_path "PATH", dir
+    # end
 
     args = %W[
       --prefix="#{prefix}"
@@ -276,12 +277,12 @@ class FfmpegSkyzyx < Formula
 
     ENV.deparallelize
     system "./configure", *args
-    system "make"
-    system "make", "install"
+    system "/usr/local/opt/make/libexec/gnubin/make"
+    system "/usr/local/opt/make/libexec/gnubin/make", "install"
 
     # Build and install additional FFmpeg tools
-    system "make", "alltools"
-    bin.install Dir["tools/*"].select { |f| File.executable? f }
+    # system "make", "alltools"
+    # bin.install Dir["tools/*"].select { |f| File.executable? f }
 
     # Fix for Non-executables that were installed to bin/
     mv bin/"python", pkgshare/"python", :force => true
