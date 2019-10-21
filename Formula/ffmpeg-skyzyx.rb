@@ -14,6 +14,7 @@ class FfmpegSkyzyx < Formula
 
   conflicts_with "ffmpeg", :because => "ffmpeg-skyzyx also ships a ffmpeg binary"
 
+  depends_on "make" => :build
   depends_on "nasm" => :build
   depends_on "pkg-config" => :build
   depends_on "texi2html" => :build
@@ -97,6 +98,9 @@ class FfmpegSkyzyx < Formula
     ENV.append_path "PKG_CONFIG_PATH", "/usr/local/lib/pkgconfig"
     ENV.append_path "PKG_CONFIG_PATH", "/usr/lib/pkgconfig"
     ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
+
+    # Add all GNU versions of CLI tools to the PATH
+    Dir.glob("/usr/local/opt/**/gnubin") { |d| ENV.prepend_path "PATH" "#{d}" }
 
     args = %W[
       --prefix="#{prefix}"
@@ -267,7 +271,6 @@ class FfmpegSkyzyx < Formula
     ]
 
     ENV.deparallelize
-    # system "LIBFFI_CFLAGS=\"#{ENV["LIBFFI_CFLAGS"]}\"", "LIBFFI_LIBS=\"#{ENV["LIBFFI_LIBS"]}\"", "GLIB_CFLAGS=\"#{ENV["GLIB_CFLAGS"]}\"", "GLIB_LIBS=\"#{ENV["GLIB_LIBS"]}\"", "./configure", *args
     system "./configure", *args
     system "make"
     system "make", "install"
