@@ -210,6 +210,8 @@
 `libfdk_aac`
 `libgsm_ms`
 `libgsm`
+`libopencore_amrnb`
+`libopencore_amrwb`
 `libopenh264`
 `libopenjpeg`
 `libopus`

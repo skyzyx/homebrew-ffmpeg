@@ -288,7 +288,6 @@
 `wtv`
 `wv`
 `wve`
-`x11grab`
 `xa`
 `xbin`
 `xmv`

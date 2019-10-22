@@ -31,6 +31,7 @@ class FfmpegSkyzyx < Formula
   depends_on "fdk-aac-encoder"
   depends_on "fontconfig"
   depends_on "freetype"
+  depends_on "frei0r"
   depends_on "git"
   depends_on "glib"
   depends_on "gnutls"
@@ -55,7 +56,10 @@ class FfmpegSkyzyx < Formula
   depends_on "openh264"
   depends_on "openjpeg"
   depends_on "opus"
+  depends_on "rtmpdump"
+  depends_on "rubberband"
   depends_on "sdl"
+  depends_on "sdl2"
   depends_on "shtool"
   depends_on "snappy"
   depends_on "speex"
@@ -80,9 +84,9 @@ class FfmpegSkyzyx < Formula
     # https://trac.ffmpeg.org/ticket/8073#comment:12
     ENV.append_to_cflags "-fno-stack-check" if DevelopmentTools.clang_build_version >= 1010
 
-    # FreeType
-    ENV.append_to_cflags `freetype-config --cflags`
-    ENV.append "LDFLAGS", `freetype-config --libs`
+    # # FreeType
+    # ENV.append_to_cflags `freetype-config --cflags`
+    # ENV.append "LDFLAGS", `freetype-config --libs`
 
     # FFI
     ENV.append "LIBFFI_CFLAGS", "-I/usr/include/ffi"
@@ -97,21 +101,16 @@ class FfmpegSkyzyx < Formula
     # pkg-config
     ENV.append_path "PKG_CONFIG_PATH", "/usr/local/lib/pkgconfig"
     ENV.append_path "PKG_CONFIG_PATH", "/usr/lib/pkgconfig"
-    ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
-
-    # Add all GNU versions of CLI tools to the PATH
-    # Dir.glob("/usr/local/opt/*/libexec/gnubin") do | dir |
-    #   ohai dir
-    #   ENV.prepend_path "PATH", dir
-    # end
+    # ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
     args = %W[
-      --prefix="#{prefix}"
+      --prefix=#{prefix}
       --disable-htmlpages
+      --disable-indev=jack
+      --disable-libjack
       --disable-podpages
       --disable-txtpages
       --enable-avisynth
-      --enable-avresample
       --enable-chromaprint
       --enable-decoder=aac
       --enable-decoder=ac3
@@ -201,6 +200,8 @@ class FfmpegSkyzyx < Formula
       --enable-ffplay
       --enable-ffprobe
       --enable-fontconfig
+      --enable-frei0r
+      --enable-gnutls
       --enable-gpl
       --enable-hwaccel=h264_videotoolbox
       --enable-hwaccel=hevc_videotoolbox
@@ -216,9 +217,12 @@ class FfmpegSkyzyx < Formula
       --enable-libgsm
       --enable-libmodplug
       --enable-libmp3lame
+      --enable-libopencore-amrnb
+      --enable-libopencore-amrwb
       --enable-libopenh264
       --enable-libopenjpeg
       --enable-libopus
+      --enable-librtmp
       --enable-librubberband
       --enable-libsnappy
       --enable-libsoxr
@@ -236,6 +240,7 @@ class FfmpegSkyzyx < Formula
       --enable-libxvid
       --enable-libzimg
       --enable-libzmq
+      --enable-lzma
       --enable-muxer=ac3
       --enable-muxer=apng
       --enable-muxer=ass
@@ -268,14 +273,18 @@ class FfmpegSkyzyx < Formula
       --enable-shared
       --enable-small
       --enable-version3
+      --enable-videotoolbox
       --extra-version=skyzyx
       --cc=#{ENV.cc}
       --host-cflags="#{ENV.cflags.strip}"
-      --host-ldflags="#{ENV.ldflags.strip}"
     ]
 
     system "./configure", *args
-    system "make"
+    system "make", "install"
+
+    # Build and install additional FFmpeg tools
+    system "make", "alltools"
+    bin.install Dir["tools/*"].select { |f| File.executable? f }
 
     # Fix for Non-executables that were installed to bin/
     mv bin/"python", pkgshare/"python", :force => true

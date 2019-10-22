@@ -61,6 +61,7 @@
 `libgsm_ms`
 `libgsm`
 `libmp3lame`
+`libopencore_amrnb`
 `libopenh264`
 `libopenjpeg`
 `libopus`

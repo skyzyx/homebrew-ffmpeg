@@ -13,6 +13,7 @@
 `adpcm_yamaha`
 `alac`
 `alias_pix`
+`amr_nb`
 `amv`
 `apng`
 `aptx_hd`

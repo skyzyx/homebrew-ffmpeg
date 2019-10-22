@@ -1,8 +1,7 @@
---extra-cflags=-fno-stack-check
---arch=x86_64
---cpu=native
---cc=/usr/bin/clang
+--prefix=/usr/local/Cellar/ffmpeg-skyzyx/HEAD-0b8956b_1
 --disable-htmlpages
+--disable-indev=jack
+--disable-libjack
 --disable-podpages
 --disable-txtpages
 --enable-avisynth
@@ -95,6 +94,8 @@
 --enable-ffplay
 --enable-ffprobe
 --enable-fontconfig
+--enable-frei0r
+--enable-gnutls
 --enable-gpl
 --enable-hwaccel=h264_videotoolbox
 --enable-hwaccel=hevc_videotoolbox
@@ -110,9 +111,12 @@
 --enable-libgsm
 --enable-libmodplug
 --enable-libmp3lame
+--enable-libopencore-amrnb
+--enable-libopencore-amrwb
 --enable-libopenh264
 --enable-libopenjpeg
 --enable-libopus
+--enable-librtmp
 --enable-librubberband
 --enable-libsnappy
 --enable-libsoxr
@@ -130,6 +134,7 @@
 --enable-libxvid
 --enable-libzimg
 --enable-libzmq
+--enable-lzma
 --enable-muxer=ac3
 --enable-muxer=apng
 --enable-muxer=ass
@@ -158,6 +163,10 @@
 --enable-muxer=webp
 --enable-muxer=webvtt
 --enable-nonfree
+--enable-pthreads
+--enable-shared
 --enable-small
 --enable-version3
+--enable-videotoolbox
 --extra-version=skyzyx
+--cc=clang
