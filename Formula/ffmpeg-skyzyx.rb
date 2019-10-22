@@ -274,14 +274,8 @@ class FfmpegSkyzyx < Formula
       --host-ldflags="#{ENV.ldflags.strip}"
     ]
 
-    ENV.deparallelize
     system "./configure", *args
     system "make"
-    system "make", "install"
-
-    # Build and install additional FFmpeg tools
-    # system "make", "alltools"
-    # bin.install Dir["tools/*"].select { |f| File.executable? f }
 
     # Fix for Non-executables that were installed to bin/
     mv bin/"python", pkgshare/"python", :force => true
