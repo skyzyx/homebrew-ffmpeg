@@ -3,6 +3,7 @@
 AWK=/usr/local/opt/gawk/libexec/gnubin/awk
 GREP=/usr/local/opt/grep/libexec/gnubin/grep
 NPROC=/usr/local/opt/coreutils/libexec/gnubin/nproc
+SED=/usr/local/opt/gnu-sed/libexec/gnubin/sed
 SORT=/usr/local/opt/coreutils/libexec/gnubin/sort
 TEE=/usr/local/opt/coreutils/libexec/gnubin/tee
 UNIQ=/usr/local/opt/coreutils/libexec/gnubin/uniq
@@ -11,7 +12,7 @@ XARGS=/usr/local/opt/findutils/libexec/gnubin/xargs
 #-------------------------------------------------------------------------------
 
 all:
-	@cat Makefile | grep "^[a-z]" | sed 's/://' | awk '{print $$1}'
+	@cat Makefile | $(GREP) "^[a-z]" | $(SED) 's/://' | $(AWK) '{print $$1}'
 
 .PHONY: clean
 clean:
