@@ -1,16 +1,10 @@
 class FfmpegSkyzyx < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
-  url "https://ffmpeg.org/releases/ffmpeg-4.2.1.tar.xz"
-  sha256 "cec7c87e9b60d174509e263ac4011b522385fd0775292e1670ecc1180c9bb6d4"
+  url "https://ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz"
+  sha256 "cb754255ab0ee2ea5f66f8850e1bd6ad5cac1cd855d0a2f4990fb8c668b0d29c"
   revision 1
   head "https://github.com/FFmpeg/FFmpeg.git"
-
-  bottle do
-    sha256 "872c9fcb27453b64204084a6af2cc4e8c3458c2ae5e19ed9df316c0267a4c6fd" => :catalina
-    sha256 "479ff95a358f95c7516e0334750ab67e8410c985dfb00ec96c4b1cebd5e4772b" => :mojave
-    sha256 "2b7eec4f955480a95ffe1e11f8abaf8bba98f221ae040c4737afd0c63657bed7" => :high_sierra
-  end
 
   conflicts_with "ffmpeg", :because => "ffmpeg-skyzyx also ships a ffmpeg binary"
 
