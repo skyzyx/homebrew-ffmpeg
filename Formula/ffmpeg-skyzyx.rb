@@ -201,6 +201,7 @@ class FfmpegSkyzyx < Formula
       --enable-hwaccel=hevc_videotoolbox
       --enable-hwaccel=mpeg2_videotoolbox
       --enable-hwaccel=mpeg4_videotoolbox
+      --enable-libxml2
       --enable-libaom
       --enable-libass
       --enable-libbluray

@@ -136,6 +136,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
     --enable-hwaccel=hevc_videotoolbox \
     --enable-hwaccel=mpeg2_videotoolbox \
     --enable-hwaccel=mpeg4_videotoolbox \
+    --enable-libxml2 \
     --enable-libaom \
     --enable-libass \
     --enable-libbluray \
