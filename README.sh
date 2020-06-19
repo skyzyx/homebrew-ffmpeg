@@ -9,7 +9,7 @@ A build of FFMPEG which supports more than the official Homebrew build.
 
 The \`ffmpeg\` package from homebrew-core supports most modern codecs, including H.264/AVC, H.265/HEVC, Theora, VP8, VP9, AV1, and support for Intel Quick Sync hardware encoding/decoding (in [Sandy Bridge and newer Macs](https://en.wikipedia.org/wiki/List_of_Macintosh_models_grouped_by_CPU_type#Sandy_Bridge)).
 
-This \`ffmpeg-skyzyx\` package supports all of that plus: [Apple Lossless]; [Animated PNG] (used for animated stickers and Memoji); [SSA/ASS], [SRT], and [WebVTT] subtitles; [Microsoft VC1]; Google [WebP]/[WebM]; [MPEG-DASH] streaming; HTTP Live Streaming ([HLS]); [FreeType]; [Opus] (VOIP audio); [ChromaPrint] for acoustic fingerprinting; and some alternate encoder implementations.
+This \`ffmpeg-skyzyx\` package supports all of that plus: [Apple Lossless]; [Animated PNG] (used for animated stickers and Memoji); [SSA/ASS], [SRT], and [WebVTT] subtitles; [Microsoft VC1]; Google [WebP]/[WebM]; [MPEG-DASH] streaming; HTTP Live Streaming ([HLS]); [FreeType]; [Opus] (VOIP audio); and some alternate encoder implementations.
 
 ## Installation
 
@@ -87,7 +87,6 @@ $(cat docs/hwaccels.txt | xargs | sed "s/\n/ /g")
 
   [Animated PNG]: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/APNG
   [Apple Lossless]: https://macosforge.github.io/alac/
-  [ChromaPrint]: https://acoustid.org/chromaprint
   [FreeType]: https://www.freetype.org
   [HLS]: https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Setting_up_adaptive_streaming_media_sources
   [Microsoft VC1]: https://en.wikipedia.org/wiki/VC-1

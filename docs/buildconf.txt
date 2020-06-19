@@ -5,7 +5,6 @@
 --disable-podpages
 --disable-txtpages
 --enable-avisynth
---enable-chromaprint
 --enable-decoder=aac
 --enable-decoder=ac3
 --enable-decoder=alac
@@ -139,7 +138,6 @@
 --enable-muxer=ac3
 --enable-muxer=apng
 --enable-muxer=ass
---enable-muxer=chromaprint
 --enable-muxer=dash
 --enable-muxer=flac
 --enable-muxer=flv
