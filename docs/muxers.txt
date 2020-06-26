@@ -21,7 +21,6 @@
 `bit`
 `caf`
 `cavsvideo`
-`chromaprint`
 `codec2`
 `codec2raw`
 `crc`

@@ -15,7 +15,6 @@ class FfmpegSkyzyx < Formula
 
   depends_on "aom"
   depends_on "automake"
-  depends_on "chromaprint"
   depends_on "coreutils"
   depends_on "dav1d"
   depends_on "dwarf"
@@ -105,7 +104,6 @@ class FfmpegSkyzyx < Formula
       --disable-podpages
       --disable-txtpages
       --enable-avisynth
-      --enable-chromaprint
       --enable-decoder=aac
       --enable-decoder=ac3
       --enable-decoder=alac
@@ -201,6 +199,7 @@ class FfmpegSkyzyx < Formula
       --enable-hwaccel=hevc_videotoolbox
       --enable-hwaccel=mpeg2_videotoolbox
       --enable-hwaccel=mpeg4_videotoolbox
+      --enable-libxml2
       --enable-libaom
       --enable-libass
       --enable-libbluray
@@ -238,7 +237,6 @@ class FfmpegSkyzyx < Formula
       --enable-muxer=ac3
       --enable-muxer=apng
       --enable-muxer=ass
-      --enable-muxer=chromaprint
       --enable-muxer=dash
       --enable-muxer=flac
       --enable-muxer=flv
