@@ -105,7 +105,6 @@ class FfmpegSkyzyx < Formula
       --disable-libjack
       --disable-podpages
       --disable-txtpages
-      --enable-avisynth
       --enable-decoder=aac
       --enable-decoder=ac3
       --enable-decoder=alac
