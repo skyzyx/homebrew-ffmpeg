@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-cat << EOF > "README.md"
+cat <<EOF >"README.md"
 # homebrew-ffmpeg
 
 A build of FFMPEG which supports more than the official Homebrew build.
@@ -45,41 +45,41 @@ $(cat docs/buildconf.txt | xargs -I% echo '    % \')
 
 #### Decoding Codecs
 
-$(cat docs/codecs-decode.txt | xargs | sed "s/\n/ /g")
+$(cat docs/codecs-decode.txt | xargs -0 | sed "s/\n/ /g")
 
 #### Decoding Packages
 
-$(cat docs/decoders.txt | xargs | sed "s/\n/ /g")
+$(cat docs/decoders.txt | xargs -0 | sed "s/\n/ /g")
 
 ### Encode
 
 #### Encoding Codecs
 
-$(cat docs/codecs-encode.txt | xargs | sed "s/\n/ /g")
+$(cat docs/codecs-encode.txt | xargs -0 | sed "s/\n/ /g")
 
 #### Encoding Packages
 
-$(cat docs/encoders.txt | xargs | sed "s/\n/ /g")
+$(cat docs/encoders.txt | xargs -0 | sed "s/\n/ /g")
 
 ### Muxers
 
-$(cat docs/muxers.txt | xargs | sed "s/\n/ /g")
+$(cat docs/muxers.txt | xargs -0 | sed "s/\n/ /g")
 
 ### Demuxers
 
-$(cat docs/demuxers.txt | xargs | sed "s/\n/ /g")
+$(cat docs/demuxers.txt | xargs -0 | sed "s/\n/ /g")
 
 ### Pixel Formats
 
-$(cat docs/pix_fmts.txt | xargs | sed "s/\n/ /g")
+$(cat docs/pix_fmts.txt | xargs -0 | sed "s/\n/ /g")
 
 ### Bitstream Filters
 
-$(cat docs/bsfs.txt | xargs | sed "s/\n/ /g")
+$(cat docs/bsfs.txt | xargs -0 | sed "s/\n/ /g")
 
 ### Hardware Acceleration
 
-$(cat docs/hwaccels.txt | xargs | sed "s/\n/ /g")
+$(cat docs/hwaccels.txt | xargs -0 | sed "s/\n/ /g")
 
 ## Documentation
 

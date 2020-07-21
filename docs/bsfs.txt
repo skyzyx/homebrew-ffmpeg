@@ -1,4 +1,5 @@
 `aac_adtstoasc`
+`av1_frame_merge`
 `av1_frame_split`
 `av1_metadata`
 `chomp`
@@ -22,6 +23,8 @@
 `mpeg4_unpack_bframes`
 `noise`
 `null`
+`opus_metadata`
+`pcm_rechunk`
 `prores_metadata`
 `remove_extra`
 `text2movsub`

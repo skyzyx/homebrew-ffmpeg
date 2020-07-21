@@ -13,6 +13,7 @@
 `adpcm_afc`
 `adpcm_agm`
 `adpcm_aica`
+`adpcm_argo`
 `adpcm_ct`
 `adpcm_dtk`
 `adpcm_ea_maxis_xa`
@@ -24,18 +25,23 @@
 `adpcm_g722`
 `adpcm_g726`
 `adpcm_g726le`
+`adpcm_ima_alp`
 `adpcm_ima_amv`
 `adpcm_ima_apc`
+`adpcm_ima_apm`
+`adpcm_ima_cunning`
 `adpcm_ima_dat4`
 `adpcm_ima_dk3`
 `adpcm_ima_dk4`
 `adpcm_ima_ea_eacs`
 `adpcm_ima_ea_sead`
 `adpcm_ima_iss`
+`adpcm_ima_mtf`
 `adpcm_ima_oki`
 `adpcm_ima_qt`
 `adpcm_ima_rad`
 `adpcm_ima_smjpeg`
+`adpcm_ima_ssi`
 `adpcm_ima_wav`
 `adpcm_ima_ws`
 `adpcm_ms`
@@ -50,6 +56,7 @@
 `adpcm_vima`
 `adpcm_xa`
 `adpcm_yamaha`
+`adpcm_zork`
 `agm`
 `aic`
 `alac`
@@ -96,6 +103,7 @@
 `c93`
 `cavs`
 `cdgraphics`
+`cdtoons`
 `cdxl`
 `cfhd`
 `cinepak`
@@ -109,6 +117,7 @@
 `cscd`
 `cyuv`
 `dds`
+`derf_dpcm`
 `dfa`
 `dirac`
 `dnxhd`
@@ -162,6 +171,7 @@
 `h263p`
 `h264`
 `hap`
+`hca`
 `hcom`
 `hdmv_pgs_subtitle`
 `hevc`
@@ -232,11 +242,15 @@
 `mts2`
 `musepack7`
 `musepack8`
+`mv30`
 `mvc1`
 `mvc2`
+`mvdv`
+`mvha`
 `mwsc`
 `mxpeg`
 `nellymoser`
+`notchlc`
 `nuv`
 `opus`
 `paf_audio`
@@ -277,8 +291,8 @@
 `pcm_u32le`
 `pcm_u8`
 `pcm_vidc`
-`pcm_zork`
 `pcx`
+`pfm`
 `pgm`
 `pgmyuv`
 `pictor`
@@ -325,6 +339,7 @@
 `sheervideo`
 `shorten`
 `sipr`
+`siren`
 `smackaudio`
 `smackvideo`
 `smc`

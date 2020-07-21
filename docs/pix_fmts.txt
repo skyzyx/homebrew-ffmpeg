@@ -113,9 +113,12 @@
 `vaapi_vld`
 `vdpau`
 `videotoolbox_vld`
+`vulkan`
 `xvmc`
 `xyz12be`
 `xyz12le`
+`y210be`
+`y210le`
 `ya16be`
 `ya16le`
 `ya8`

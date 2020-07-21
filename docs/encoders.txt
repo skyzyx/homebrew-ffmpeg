@@ -6,6 +6,7 @@
 `ac3`
 `adpcm_adx`
 `adpcm_ima_qt`
+`adpcm_ima_ssi`
 `adpcm_ima_wav`
 `adpcm_ms`
 `adpcm_swf`

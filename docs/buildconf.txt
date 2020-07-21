@@ -1,10 +1,9 @@
---prefix=/usr/local/Cellar/ffmpeg-skyzyx/HEAD-0b8956b_1
+--prefix=/usr/local/Cellar/ffmpeg-skyzyx/4.3.1_1
 --disable-htmlpages
 --disable-indev=jack
 --disable-libjack
 --disable-podpages
 --disable-txtpages
---enable-avisynth
 --enable-decoder=aac
 --enable-decoder=ac3
 --enable-decoder=alac
@@ -169,3 +168,4 @@
 --enable-videotoolbox
 --extra-version=skyzyx
 --cc=clang
+--host-cflags='
