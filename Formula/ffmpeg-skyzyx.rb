@@ -96,8 +96,6 @@ class FfmpegSkyzyx < Formula
     ENV.append_path "PKG_CONFIG_PATH", "/usr/lib/pkgconfig"
     # ENV.append_path "PKG_CONFIG_PATH", "/opt/X11/lib/pkgconfig"
 
-    system "install-headers"
-    
     args = %W[
       --prefix=#{prefix}
       --disable-htmlpages
