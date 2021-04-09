@@ -108,6 +108,7 @@ class FfmpegSkyzyx < Formula
       --enable-decoder=alac
       --enable-decoder=apng
       --enable-decoder=ass
+      --enable-decoder=av1
       --enable-decoder=bmp
       --enable-decoder=flac
       --enable-decoder=flv
@@ -140,6 +141,7 @@ class FfmpegSkyzyx < Formula
       --enable-demuxer=ac3
       --enable-demuxer=apng
       --enable-demuxer=ass
+      --enable-demuxer-av1
       --enable-demuxer=dash
       --enable-demuxer=flac
       --enable-demuxer=flv
@@ -170,6 +172,8 @@ class FfmpegSkyzyx < Formula
       --enable-encoder=jpeg2000
       --enable-encoder=libmp3lame
       --enable-encoder=libtheora
+      --enable-encoder=libaom_av1
+      --enable-encoder=libsvtav1
       --enable-encoder=libvorbis
       --enable-encoder=libvpx_vp8
       --enable-encoder=libvpx_vp9
