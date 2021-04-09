@@ -3,9 +3,13 @@
 `aac`
 `ac3`
 `adpcm_adx`
+`adpcm_argo`
 `adpcm_g722`
 `adpcm_g726`
 `adpcm_g726le`
+`adpcm_ima_alp`
+`adpcm_ima_amv`
+`adpcm_ima_apm`
 `adpcm_ima_qt`
 `adpcm_ima_ssi`
 `adpcm_ima_wav`
@@ -27,6 +31,7 @@
 `avui`
 `ayuv`
 `bmp`
+`cfhd`
 `cinepak`
 `cljr`
 `comfortnoise`
@@ -38,6 +43,7 @@
 `dvd_subtitle`
 `dvvideo`
 `eac3`
+`exr`
 `ffv1`
 `ffvhuff`
 `fits`
@@ -107,6 +113,7 @@
 `pcm_u8`
 `pcm_vidc`
 `pcx`
+`pfm`
 `pgm`
 `pgmyuv`
 `png`
@@ -119,6 +126,7 @@
 `rawvideo`
 `roq_dpcm`
 `roq`
+`rpza`
 `rv10`
 `rv20`
 `s302m`
@@ -127,6 +135,7 @@
 `snow`
 `sonic`
 `sonicls`
+`speedhq`
 `speex`
 `subrip`
 `sunrast`
@@ -137,6 +146,7 @@
 `tiff`
 `truehd`
 `tta`
+`ttml`
 `utvideo`
 `v210`
 `v308`

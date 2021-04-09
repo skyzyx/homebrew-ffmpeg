@@ -36,6 +36,7 @@
 `adpcm_ima_ea_eacs`
 `adpcm_ima_ea_sead`
 `adpcm_ima_iss`
+`adpcm_ima_moflex`
 `adpcm_ima_mtf`
 `adpcm_ima_oki`
 `adpcm_ima_qt`
@@ -71,6 +72,7 @@
 `aptx_hd`
 `aptx`
 `arbc`
+`argo`
 `ass`
 `asv1`
 `asv2`
@@ -114,6 +116,7 @@
 `comfortnoise`
 `cook`
 `cpia`
+`cri`
 `cscd`
 `cyuv`
 `dds`
@@ -145,6 +148,7 @@
 `escape130`
 `evrc`
 `exr`
+`fastaudio`
 `ffv1`
 `ffvhuff`
 `fic`
@@ -195,6 +199,7 @@
 `interplay_dpcm`
 `interplayacm`
 `interplayvideo`
+`ipu`
 `jacosub`
 `jpeg2000`
 `jpegls`
@@ -217,6 +222,7 @@
 `mjpegb`
 `mlp`
 `mmvideo`
+`mobiclip`
 `motionpixels`
 `mov_text`
 `mp1`
@@ -234,6 +240,7 @@
 `msmpeg4v1`
 `msmpeg4v2`
 `msmpeg4v3`
+`msp2`
 `msrle`
 `mss1`
 `mss2`
@@ -283,6 +290,7 @@
 `pcm_s64le`
 `pcm_s8_planar`
 `pcm_s8`
+`pcm_sga`
 `pcm_u16be`
 `pcm_u16le`
 `pcm_u24be`
@@ -295,6 +303,8 @@
 `pfm`
 `pgm`
 `pgmyuv`
+`pgx`
+`photocd`
 `pictor`
 `pixlet`
 `pjs`
@@ -334,10 +344,12 @@
 `scpr`
 `screenpresso`
 `sdx2_dpcm`
+`sga`
 `sgi`
 `sgirle`
 `sheervideo`
 `shorten`
+`simbiosis_imx`
 `sipr`
 `siren`
 `smackaudio`

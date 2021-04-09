@@ -114,6 +114,8 @@
 `vdpau`
 `videotoolbox_vld`
 `vulkan`
+`x2rgb10be`
+`x2rgb10le`
 `xvmc`
 `xyz12be`
 `xyz12le`

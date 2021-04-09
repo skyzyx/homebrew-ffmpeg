@@ -33,176 +33,182 @@ CFLAGS=`freetype-config --cflags` \
 LDFLAGS=`freetype-config --libs` \
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/opt/X11/lib/pkgconfig \
 ./configure \
-    --prefix=/usr/local/Cellar/ffmpeg-skyzyx/4.3.1_1 \
-    --disable-htmlpages \
-    --disable-indev=jack \
-    --disable-libjack \
-    --disable-podpages \
-    --disable-txtpages \
-    --enable-decoder=aac \
-    --enable-decoder=ac3 \
-    --enable-decoder=alac \
-    --enable-decoder=apng \
-    --enable-decoder=ass \
-    --enable-decoder=bmp \
-    --enable-decoder=flac \
-    --enable-decoder=flv \
-    --enable-decoder=gif \
-    --enable-decoder=h264 \
-    --enable-decoder=hevc \
-    --enable-decoder=jpeg2000 \
-    --enable-decoder=libvorbis \
-    --enable-decoder=libvpx_vp8 \
-    --enable-decoder=libvpx_vp9 \
-    --enable-decoder=mp3 \
-    --enable-decoder=mpeg4 \
-    --enable-decoder=png \
-    --enable-decoder=srt \
-    --enable-decoder=ssa \
-    --enable-decoder=text \
-    --enable-decoder=theora \
-    --enable-decoder=tiff \
-    --enable-decoder=vc1 \
-    --enable-decoder=vc1image \
-    --enable-decoder=vorbis \
-    --enable-decoder=vp8 \
-    --enable-decoder=vp9 \
-    --enable-decoder=wavpack \
-    --enable-decoder=webp \
-    --enable-decoder=webvtt \
-    --enable-decoder=yuv4 \
-    --enable-decoder=zlib \
-    --enable-demuxer=aac \
-    --enable-demuxer=ac3 \
-    --enable-demuxer=apng \
-    --enable-demuxer=ass \
-    --enable-demuxer=dash \
-    --enable-demuxer=flac \
-    --enable-demuxer=flv \
-    --enable-demuxer=gif \
-    --enable-demuxer=h264 \
-    --enable-demuxer=hevc \
-    --enable-demuxer=hls \
-    --enable-demuxer=m4v \
-    --enable-demuxer=matroska \
-    --enable-demuxer=mov \
-    --enable-demuxer=mp3 \
-    --enable-demuxer=ogg \
-    --enable-demuxer=srt \
-    --enable-demuxer=vc1 \
-    --enable-demuxer=wav \
-    --enable-demuxer=webm_dash_manifest \
-    --enable-demuxer=webvtt \
-    --enable-encoder=aac \
-    --enable-encoder=ac3 \
-    --enable-encoder=alac \
-    --enable-encoder=apng \
-    --enable-encoder=ass \
-    --enable-encoder=flac \
-    --enable-encoder=flv \
-    --enable-encoder=gif \
-    --enable-encoder=h264_videotoolbox \
-    --enable-encoder=hevc_videotoolbox \
-    --enable-encoder=jpeg2000 \
-    --enable-encoder=libmp3lame \
-    --enable-encoder=libtheora \
-    --enable-encoder=libvorbis \
-    --enable-encoder=libvpx_vp8 \
-    --enable-encoder=libvpx_vp9 \
-    --enable-encoder=libwebp \
-    --enable-encoder=libwebp_anim \
-    --enable-encoder=libx264 \
-    --enable-encoder=libx265 \
-    --enable-encoder=libxvid \
-    --enable-encoder=mpeg4 \
-    --enable-encoder=png \
-    --enable-encoder=srt \
-    --enable-encoder=ssa \
-    --enable-encoder=text \
-    --enable-encoder=tiff \
-    --enable-encoder=vorbis \
-    --enable-encoder=webvtt \
-    --enable-encoder=yuv4 \
-    --enable-encoder=zlib \
-    --enable-ffplay \
-    --enable-ffprobe \
-    --enable-fontconfig \
-    --enable-frei0r \
-    --enable-gnutls \
-    --enable-gpl \
-    --enable-hwaccel=h264_videotoolbox \
-    --enable-hwaccel=hevc_videotoolbox \
-    --enable-hwaccel=mpeg2_videotoolbox \
-    --enable-hwaccel=mpeg4_videotoolbox \
-    --enable-libxml2 \
-    --enable-libaom \
-    --enable-libass \
-    --enable-libbluray \
-    --enable-libdav1d \
-    --enable-libfdk-aac \
-    --enable-libfontconfig \
-    --enable-libfreetype \
-    --enable-libgsm \
-    --enable-libmodplug \
-    --enable-libmp3lame \
-    --enable-libopencore-amrnb \
-    --enable-libopencore-amrwb \
-    --enable-libopenh264 \
-    --enable-libopenjpeg \
-    --enable-libopus \
-    --enable-librtmp \
-    --enable-librubberband \
-    --enable-libsnappy \
-    --enable-libsoxr \
-    --enable-libspeex \
-    --enable-libtesseract \
-    --enable-libtheora \
-    --enable-libtwolame \
-    --enable-libvidstab \
-    --enable-libvorbis \
-    --enable-libvpx \
-    --enable-libwavpack \
-    --enable-libwebp \
-    --enable-libx264 \
-    --enable-libx265 \
-    --enable-libxvid \
-    --enable-libzimg \
-    --enable-libzmq \
-    --enable-lzma \
-    --enable-muxer=ac3 \
-    --enable-muxer=apng \
-    --enable-muxer=ass \
-    --enable-muxer=dash \
-    --enable-muxer=flac \
-    --enable-muxer=flv \
-    --enable-muxer=gif \
-    --enable-muxer=h264 \
-    --enable-muxer=hevc \
-    --enable-muxer=hls \
-    --enable-muxer=m4v \
-    --enable-muxer=matroska \
-    --enable-muxer=matroska_audio \
-    --enable-muxer=mov \
-    --enable-muxer=mp3 \
-    --enable-muxer=mp4 \
-    --enable-muxer=oga \
-    --enable-muxer=ogg \
-    --enable-muxer=ogv \
-    --enable-muxer=srt \
-    --enable-muxer=vc1 \
-    --enable-muxer=webm \
-    --enable-muxer=webm_chunk \
-    --enable-muxer=webm_dash_manifest \
-    --enable-muxer=webp \
-    --enable-muxer=webvtt \
-    --enable-nonfree \
-    --enable-pthreads \
-    --enable-shared \
-    --enable-small \
-    --enable-version3 \
-    --enable-videotoolbox \
-    --extra-version=skyzyx \
-    --cc=clang \
+    --prefix=/usr/local/Cellar/ffmpeg-skyzyx/4.4_1
+--disable-htmlpages
+--disable-indev=jack
+--disable-libjack
+--disable-podpages
+--disable-txtpages
+--enable-decoder=aac
+--enable-decoder=ac3
+--enable-decoder=alac
+--enable-decoder=apng
+--enable-decoder=ass
+--enable-decoder=av1
+--enable-decoder=bmp
+--enable-decoder=flac
+--enable-decoder=flv
+--enable-decoder=gif
+--enable-decoder=h264
+--enable-decoder=hevc
+--enable-decoder=jpeg2000
+--enable-decoder=libvorbis
+--enable-decoder=libvpx_vp8
+--enable-decoder=libvpx_vp9
+--enable-decoder=mp3
+--enable-decoder=mpeg4
+--enable-decoder=png
+--enable-decoder=srt
+--enable-decoder=ssa
+--enable-decoder=text
+--enable-decoder=theora
+--enable-decoder=tiff
+--enable-decoder=vc1
+--enable-decoder=vc1image
+--enable-decoder=vorbis
+--enable-decoder=vp8
+--enable-decoder=vp9
+--enable-decoder=wavpack
+--enable-decoder=webp
+--enable-decoder=webvtt
+--enable-decoder=yuv4
+--enable-decoder=zlib
+--enable-demuxer=aac
+--enable-demuxer=ac3
+--enable-demuxer=apng
+--enable-demuxer=ass
+--enable-demuxer=av1
+--enable-demuxer=dash
+--enable-demuxer=flac
+--enable-demuxer=flv
+--enable-demuxer=gif
+--enable-demuxer=h264
+--enable-demuxer=hevc
+--enable-demuxer=hls
+--enable-demuxer=m4v
+--enable-demuxer=matroska
+--enable-demuxer=mov
+--enable-demuxer=mp3
+--enable-demuxer=ogg
+--enable-demuxer=srt
+--enable-demuxer=vc1
+--enable-demuxer=wav
+--enable-demuxer=webm_dash_manifest
+--enable-demuxer=webvtt
+--enable-encoder=aac
+--enable-encoder=ac3
+--enable-encoder=alac
+--enable-encoder=apng
+--enable-encoder=ass
+--enable-encoder=flac
+--enable-encoder=flv
+--enable-encoder=gif
+--enable-encoder=h264_videotoolbox
+--enable-encoder=hevc_videotoolbox
+--enable-encoder=jpeg2000
+--enable-encoder=libmp3lame
+--enable-encoder=libtheora
+--enable-encoder=libaom_av1
+--enable-encoder=libsvtav1
+--enable-encoder=libvorbis
+--enable-encoder=libvpx_vp8
+--enable-encoder=libvpx_vp9
+--enable-encoder=libwebp
+--enable-encoder=libwebp_anim
+--enable-encoder=libx264
+--enable-encoder=libx265
+--enable-encoder=libxvid
+--enable-encoder=mpeg4
+--enable-encoder=png
+--enable-encoder=srt
+--enable-encoder=ssa
+--enable-encoder=text
+--enable-encoder=tiff
+--enable-encoder=vorbis
+--enable-encoder=webvtt
+--enable-encoder=yuv4
+--enable-encoder=zlib
+--enable-ffplay
+--enable-ffprobe
+--enable-fontconfig
+--enable-frei0r
+--enable-gnutls
+--enable-gpl
+--enable-hwaccel=h264_videotoolbox
+--enable-hwaccel=hevc_videotoolbox
+--enable-hwaccel=mpeg2_videotoolbox
+--enable-hwaccel=mpeg4_videotoolbox
+--enable-libxml2
+--enable-libaom
+--enable-libass
+--enable-libbluray
+--enable-libdav1d
+--enable-libfdk-aac
+--enable-libfontconfig
+--enable-libfreetype
+--enable-libgsm
+--enable-libmodplug
+--enable-libmp3lame
+--enable-libopencore-amrnb
+--enable-libopencore-amrwb
+--enable-libopenh264
+--enable-libopenjpeg
+--enable-libopus
+--enable-librtmp
+--enable-librubberband
+--enable-libsnappy
+--enable-libsoxr
+--enable-libspeex
+--enable-libtesseract
+--enable-libtheora
+--enable-libtwolame
+--enable-libvidstab
+--enable-libvorbis
+--enable-libvpx
+--enable-libwebp
+--enable-libx264
+--enable-libx265
+--enable-libxvid
+--enable-libzimg
+--enable-libzmq
+--enable-lzma
+--enable-muxer=ac3
+--enable-muxer=apng
+--enable-muxer=ass
+--enable-muxer=av1
+--enable-muxer=dash
+--enable-muxer=flac
+--enable-muxer=flv
+--enable-muxer=gif
+--enable-muxer=h264
+--enable-muxer=hevc
+--enable-muxer=hls
+--enable-muxer=m4v
+--enable-muxer=matroska
+--enable-muxer=matroska_audio
+--enable-muxer=mov
+--enable-muxer=mp3
+--enable-muxer=mp4
+--enable-muxer=oga
+--enable-muxer=ogg
+--enable-muxer=ogv
+--enable-muxer=srt
+--enable-muxer=vc1
+--enable-muxer=webm
+--enable-muxer=webm_chunk
+--enable-muxer=webm_dash_manifest
+--enable-muxer=webp
+--enable-muxer=webvtt
+--enable-nonfree
+--enable-pthreads
+--enable-shared
+--enable-small
+--enable-version3
+--enable-videotoolbox
+--extra-version=skyzyx
+--cc=clang
+--host-cflags='
+ \
 && make -j$(nproc) ffmpeg \
 && make install
 ```
@@ -249,6 +255,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `adpcm_ima_ea_eacs`
 `adpcm_ima_ea_sead`
 `adpcm_ima_iss`
+`adpcm_ima_moflex`
 `adpcm_ima_mtf`
 `adpcm_ima_oki`
 `adpcm_ima_qt`
@@ -284,6 +291,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `aptx_hd`
 `aptx`
 `arbc`
+`argo`
 `ass`
 `asv1`
 `asv2`
@@ -327,6 +335,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `comfortnoise`
 `cook`
 `cpia`
+`cri`
 `cscd`
 `cyuv`
 `dds`
@@ -358,6 +367,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `escape130`
 `evrc`
 `exr`
+`fastaudio`
 `ffv1`
 `ffvhuff`
 `fic`
@@ -408,6 +418,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `interplay_dpcm`
 `interplayacm`
 `interplayvideo`
+`ipu`
 `jacosub`
 `jpeg2000`
 `jpegls`
@@ -430,6 +441,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `mjpegb`
 `mlp`
 `mmvideo`
+`mobiclip`
 `motionpixels`
 `mov_text`
 `mp1`
@@ -447,6 +459,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `msmpeg4v1`
 `msmpeg4v2`
 `msmpeg4v3`
+`msp2`
 `msrle`
 `mss1`
 `mss2`
@@ -496,6 +509,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pcm_s64le`
 `pcm_s8_planar`
 `pcm_s8`
+`pcm_sga`
 `pcm_u16be`
 `pcm_u16le`
 `pcm_u24be`
@@ -508,6 +522,8 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pfm`
 `pgm`
 `pgmyuv`
+`pgx`
+`photocd`
 `pictor`
 `pixlet`
 `pjs`
@@ -547,10 +563,12 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `scpr`
 `screenpresso`
 `sdx2_dpcm`
+`sga`
 `sgi`
 `sgirle`
 `sheervideo`
 `shorten`
+`simbiosis_imx`
 `sipr`
 `siren`
 `smackaudio`
@@ -699,6 +717,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `adpcm_ima_ea_eacs`
 `adpcm_ima_ea_sead`
 `adpcm_ima_iss`
+`adpcm_ima_moflex`
 `adpcm_ima_mtf`
 `adpcm_ima_oki`
 `adpcm_ima_qt_at`
@@ -738,6 +757,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `aptx_hd`
 `aptx`
 `arbc`
+`argo`
 `ass`
 `asv1`
 `asv2`
@@ -749,6 +769,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `atrac9`
 `aura2`
 `aura`
+`av1`
 `avrn`
 `avrp`
 `avs`
@@ -781,6 +802,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `comfortnoise`
 `cook`
 `cpia`
+`cri`
 `cyuv`
 `dca`
 `dds`
@@ -816,6 +838,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `escape130`
 `evrc`
 `exr`
+`fastaudio`
 `ffv1`
 `ffvhuff`
 `fic`
@@ -870,6 +893,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `interplay_dpcm`
 `interplayacm`
 `interplayvideo`
+`ipu`
 `jacosub`
 `jpeg2000`
 `jpegls`
@@ -905,6 +929,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `mjpegb`
 `mlp`
 `mmvideo`
+`mobiclip`
 `motionpixels`
 `mov_text`
 `mp1_at`
@@ -932,6 +957,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `msmpeg4`
 `msmpeg4v1`
 `msmpeg4v2`
+`msp2`
 `msrle`
 `mss1`
 `mss2`
@@ -982,6 +1008,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pcm_s64le`
 `pcm_s8_planar`
 `pcm_s8`
+`pcm_sga`
 `pcm_u16be`
 `pcm_u16le`
 `pcm_u24be`
@@ -995,6 +1022,8 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pgm`
 `pgmyuv`
 `pgssub`
+`pgx`
+`photocd`
 `pictor`
 `pixlet`
 `pjs`
@@ -1036,10 +1065,12 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `scpr`
 `screenpresso`
 `sdx2_dpcm`
+`sga`
 `sgi`
 `sgirle`
 `sheervideo`
 `shorten`
+`simbiosis_imx`
 `sipr`
 `siren`
 `smackaud`
@@ -1153,9 +1184,13 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `aac`
 `ac3`
 `adpcm_adx`
+`adpcm_argo`
 `adpcm_g722`
 `adpcm_g726`
 `adpcm_g726le`
+`adpcm_ima_alp`
+`adpcm_ima_amv`
+`adpcm_ima_apm`
 `adpcm_ima_qt`
 `adpcm_ima_ssi`
 `adpcm_ima_wav`
@@ -1177,6 +1212,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `avui`
 `ayuv`
 `bmp`
+`cfhd`
 `cinepak`
 `cljr`
 `comfortnoise`
@@ -1188,6 +1224,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `dvd_subtitle`
 `dvvideo`
 `eac3`
+`exr`
 `ffv1`
 `ffvhuff`
 `fits`
@@ -1257,6 +1294,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pcm_u8`
 `pcm_vidc`
 `pcx`
+`pfm`
 `pgm`
 `pgmyuv`
 `png`
@@ -1269,6 +1307,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `rawvideo`
 `roq_dpcm`
 `roq`
+`rpza`
 `rv10`
 `rv20`
 `s302m`
@@ -1277,6 +1316,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `snow`
 `sonic`
 `sonicls`
+`speedhq`
 `speex`
 `subrip`
 `sunrast`
@@ -1287,6 +1327,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `tiff`
 `truehd`
 `tta`
+`ttml`
 `utvideo`
 `v210`
 `v308`
@@ -1321,6 +1362,10 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `ac3_fixed`
 `ac3`
 `adpcm_adx`
+`adpcm_argo`
+`adpcm_ima_alp`
+`adpcm_ima_amv`
+`adpcm_ima_apm`
 `adpcm_ima_qt`
 `adpcm_ima_ssi`
 `adpcm_ima_wav`
@@ -1341,6 +1386,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `avui`
 `ayuv`
 `bmp`
+`cfhd`
 `cinepak`
 `cljr`
 `comfortnoise`
@@ -1351,6 +1397,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `dvdsub`
 `dvvideo`
 `eac3`
+`exr`
 `ffv1`
 `ffvhuff`
 `fits`
@@ -1388,7 +1435,6 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `libvorbis`
 `libvpx-vp9`
 `libvpx`
-`libwavpack`
 `libwebp_anim`
 `libwebp`
 `libx264`
@@ -1445,6 +1491,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pcm_u8`
 `pcm_vidc`
 `pcx`
+`pfm`
 `pgm`
 `pgmyuv`
 `png`
@@ -1459,6 +1506,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `real_144`
 `roq_dpcm`
 `roqvideo`
+`rpza`
 `rv10`
 `rv20`
 `s302m`
@@ -1467,6 +1515,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `snow`
 `sonic`
 `sonicls`
+`speedhq`
 `srt`
 `ssa`
 `subrip`
@@ -1477,6 +1526,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `tiff`
 `truehd`
 `tta`
+`ttml`
 `utvideo`
 `v210`
 `v308`
@@ -1510,15 +1560,20 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `adx`
 `aiff`
 `alaw`
+`alp`
 `amr`
+`amv`
+`apm`
 `apng`
 `aptx`
 `aptx_hd`
+`argo_asf`
 `asf`
 `asf_stream`
 `ass`
 `ast`
 `au`
+`audiotoolbox`
 `avi`
 `avm2`
 `avs2`
@@ -1642,6 +1697,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `tee`
 `truehd`
 `tta`
+`ttml`
 `u16be`
 `u16le`
 `u24be`
@@ -1673,7 +1729,9 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `4xm`
 `aa`
 `aac`
+`aax`
 `ac3`
+`ace`
 `acm`
 `act`
 `adf`
@@ -1699,6 +1757,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `aptx_hd`
 `aqtitle`
 `argo_asf`
+`argo_brp`
 `asf`
 `asf_o`
 `ass`
@@ -1710,11 +1769,13 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `avr`
 `avs`
 `avs2`
+`avs3`
 `bethsoftvid`
 `bfi`
 `bfstm`
 `bin`
 `bink`
+`binka`
 `bit`
 `bmp_pipe`
 `bmv`
@@ -1730,6 +1791,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `codec2`
 `codec2raw`
 `concat`
+`cri_pipe`
 `dash`
 `data`
 `daud`
@@ -1798,6 +1860,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `image2pipe`
 `ingenient`
 `ipmovie`
+`ipu`
 `ircam`
 `iss`
 `iv8`
@@ -1816,10 +1879,13 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `lmlm4`
 `loas`
 `lrc`
+`luodat`
 `lvf`
 `lxf`
 `m4v`
 `matroska,webm`
+`mca`
+`mcc`
 `mgsts`
 `microdvd`
 `mjpeg`
@@ -1828,6 +1894,8 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `mlv`
 `mm`
 `mmf`
+`mods`
+`moflex`
 `mov,mp4,m4a,3gp,3g2,mj2`
 `mp3`
 `mpc`
@@ -1841,6 +1909,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `mpsub`
 `msf`
 `msnwctcp`
+`msp`
 `mtaf`
 `mtv`
 `mulaw`
@@ -1855,6 +1924,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `nsv`
 `nut`
 `nuv`
+`obu`
 `ogg`
 `oma`
 `paf`
@@ -1863,6 +1933,8 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pcx_pipe`
 `pgm_pipe`
 `pgmyuv_pipe`
+`pgx_pipe`
+`photocd_pipe`
 `pictor_pipe`
 `pjs`
 `pmp`
@@ -1905,9 +1977,11 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `sds`
 `sdx`
 `ser`
+`sga`
 `sgi_pipe`
 `shn`
 `siff`
+`simbiosis_imx`
 `sln`
 `smjpeg`
 `smk`
@@ -1923,6 +1997,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `sup`
 `svag`
 `svg_pipe`
+`svs`
 `swf`
 `tak`
 `tedcaptions`
@@ -1968,8 +2043,10 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `wtv`
 `wv`
 `wve`
+`x11grab`
 `xa`
 `xbin`
+`xbm_pipe`
 `xmv`
 `xpm_pipe`
 `xvag`
@@ -2096,6 +2173,8 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `vdpau`
 `videotoolbox_vld`
 `vulkan`
+`x2rgb10be`
+`x2rgb10le`
 `xvmc`
 `xyz12be`
 `xyz12le`
@@ -2208,6 +2287,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 `pcm_rechunk`
 `prores_metadata`
 `remove_extra`
+`setts`
 `text2movsub`
 `trace_headers`
 `truehd_core`

@@ -5,6 +5,10 @@
 `ac3_fixed`
 `ac3`
 `adpcm_adx`
+`adpcm_argo`
+`adpcm_ima_alp`
+`adpcm_ima_amv`
+`adpcm_ima_apm`
 `adpcm_ima_qt`
 `adpcm_ima_ssi`
 `adpcm_ima_wav`
@@ -25,6 +29,7 @@
 `avui`
 `ayuv`
 `bmp`
+`cfhd`
 `cinepak`
 `cljr`
 `comfortnoise`
@@ -35,6 +40,7 @@
 `dvdsub`
 `dvvideo`
 `eac3`
+`exr`
 `ffv1`
 `ffvhuff`
 `fits`
@@ -72,7 +78,6 @@
 `libvorbis`
 `libvpx-vp9`
 `libvpx`
-`libwavpack`
 `libwebp_anim`
 `libwebp`
 `libx264`
@@ -129,6 +134,7 @@
 `pcm_u8`
 `pcm_vidc`
 `pcx`
+`pfm`
 `pgm`
 `pgmyuv`
 `png`
@@ -143,6 +149,7 @@
 `real_144`
 `roq_dpcm`
 `roqvideo`
+`rpza`
 `rv10`
 `rv20`
 `s302m`
@@ -151,6 +158,7 @@
 `snow`
 `sonic`
 `sonicls`
+`speedhq`
 `srt`
 `ssa`
 `subrip`
@@ -161,6 +169,7 @@
 `tiff`
 `truehd`
 `tta`
+`ttml`
 `utvideo`
 `v210`
 `v308`

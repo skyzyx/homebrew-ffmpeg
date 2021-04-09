@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-cat <<EOF >"README.md"
+cat << EOF > "README.md"
 # homebrew-ffmpeg
 
 A build of FFMPEG which supports more than the official Homebrew build.
@@ -36,7 +36,7 @@ CFLAGS=\`freetype-config --cflags\` \\
 LDFLAGS=\`freetype-config --libs\` \\
 PKG_CONFIG_PATH=\$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/opt/X11/lib/pkgconfig \\
 ./configure \\
-$(cat docs/buildconf.txt | xargs -I% echo '    % \')
+$(cat docs/buildconf.txt | xargs -0 -I% echo '    % \')
 && make -j\$(nproc) ffmpeg \\
 && make install
 \`\`\`

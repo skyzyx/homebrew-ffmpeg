@@ -27,6 +27,7 @@
 `pcm_rechunk`
 `prores_metadata`
 `remove_extra`
+`setts`
 `text2movsub`
 `trace_headers`
 `truehd_core`
