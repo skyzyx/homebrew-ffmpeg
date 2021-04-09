@@ -141,7 +141,7 @@ class FfmpegSkyzyx < Formula
       --enable-demuxer=ac3
       --enable-demuxer=apng
       --enable-demuxer=ass
-      --enable-demuxer-av1
+      --enable-demuxer=av1
       --enable-demuxer=dash
       --enable-demuxer=flac
       --enable-demuxer=flv
@@ -240,6 +240,7 @@ class FfmpegSkyzyx < Formula
       --enable-muxer=ac3
       --enable-muxer=apng
       --enable-muxer=ass
+      --enable-muxer=av1
       --enable-muxer=dash
       --enable-muxer=flac
       --enable-muxer=flv
