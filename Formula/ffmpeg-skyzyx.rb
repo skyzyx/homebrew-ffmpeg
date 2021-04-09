@@ -229,7 +229,6 @@ class FfmpegSkyzyx < Formula
       --enable-libvidstab
       --enable-libvorbis
       --enable-libvpx
-      --enable-libwavpack
       --enable-libwebp
       --enable-libx264
       --enable-libx265
