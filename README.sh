@@ -34,7 +34,7 @@ brew install https://raw.githubusercontent.com/skyzyx/homebrew-ffmpeg/master/For
 Or, if you’re debugging with a local clone (or you’re _Future Ryan_ and you’re trying to remember how to do this:)
 
 \`\`\`bash
-brew install --build-from-source ./Formula/ffmpeg-skyzyx.rb
+brew install --verbose --debug --build-from-source ./Formula/ffmpeg-skyzyx.rb
 \`\`\`
 
 (You might need to use \`reinstall\` instead.)
