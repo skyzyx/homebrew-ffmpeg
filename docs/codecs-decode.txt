@@ -25,6 +25,7 @@
 `adpcm_g722`
 `adpcm_g726`
 `adpcm_g726le`
+`adpcm_ima_acorn`
 `adpcm_ima_alp`
 `adpcm_ima_amv`
 `adpcm_ima_apc`
@@ -122,6 +123,7 @@
 `dds`
 `derf_dpcm`
 `dfa`
+`dfpwm`
 `dirac`
 `dnxhd`
 `dolby_e`
@@ -165,6 +167,7 @@
 `g723_1`
 `g729`
 `gdv`
+`gem`
 `gif`
 `gremlin_dpcm`
 `gsm_ms`
@@ -240,6 +243,7 @@
 `msmpeg4v1`
 `msmpeg4v2`
 `msmpeg4v3`
+`msnsiren`
 `msp2`
 `msrle`
 `mss1`
@@ -304,6 +308,7 @@
 `pgm`
 `pgmyuv`
 `pgx`
+`phm`
 `photocd`
 `pictor`
 `pixlet`
@@ -318,6 +323,7 @@
 `qdm2`
 `qdmc`
 `qdraw`
+`qoi`
 `qpeg`
 `qtrle`
 `r10k`
@@ -402,6 +408,7 @@
 `v410`
 `vb`
 `vble`
+`vbn`
 `vc1`
 `vc1image`
 `vcr1`

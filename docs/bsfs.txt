@@ -5,6 +5,7 @@
 `chomp`
 `dca_core`
 `dump_extra`
+`dv_error_marker`
 `eac3_core`
 `extract_extradata`
 `filter_units`
@@ -25,6 +26,7 @@
 `null`
 `opus_metadata`
 `pcm_rechunk`
+`pgs_frame_merge`
 `prores_metadata`
 `remove_extra`
 `setts`

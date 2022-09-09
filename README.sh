@@ -11,17 +11,35 @@ The \`ffmpeg\` package from homebrew-core supports most modern codecs, including
 
 This \`ffmpeg-skyzyx\` package supports all of that plus: [Apple Lossless]; [Animated PNG] (used for animated stickers and Memoji); [SSA/ASS], [SRT], and [WebVTT] subtitles; [Microsoft VC1]; Google [WebP]/[WebM]; [MPEG-DASH] streaming; HTTP Live Streaming ([HLS]); [FreeType]; [Opus] (VOIP audio); and some alternate encoder implementations.
 
+Last built/tested on macOS 12.6 ”Monterey” with Xcode 13.4.1 on both Intel and Apple Silicon CPUs.
+
 ## Installation
 
-\`brew install skyzyx/ffmpeg/ffmpeg-skyzyx\`
+\`\`\`bash
+brew unlink ffmpeg
+brew install skyzyx/ffmpeg/ffmpeg-skyzyx
+\`\`\`
 
-Or \`brew tap skyzyx/ffmpeg\` and then \`brew install ffmpeg-skyzyx\`.
+Or…
+
+\`\`\`bash
+brew tap skyzyx/ffmpeg
+brew install ffmpeg-skyzyx
+\`\`\`
 
 Or install via URL (which will not receive updates):
 
 \`\`\`bash
 brew install https://raw.githubusercontent.com/skyzyx/homebrew-ffmpeg/master/Formula/ffmpeg-skyzyx.rb
 \`\`\`
+
+Or, if you’re debugging with a local clone (or you’re _Future Ryan_ and you’re trying to remember how to do this:)
+
+\`\`\`bash
+brew install --verbose --debug --build-from-source ./Formula/ffmpeg-skyzyx.rb
+\`\`\`
+
+(You might need to use \`reinstall\` instead.)
 
 ## Support
 
@@ -32,11 +50,9 @@ LIBFFI_CFLAGS=-I/usr/include/ffi \\
 LIBFFI_LIBS=-lffi \\
 GLIB_CFLAGS="-I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include" \\
 GLIB_LIBS="-lglib-2.0 -lgio-2.0" \\
-CFLAGS=\`freetype-config --cflags\` \\
-LDFLAGS=\`freetype-config --libs\` \\
 PKG_CONFIG_PATH=\$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/opt/X11/lib/pkgconfig \\
 ./configure \\
-$(cat docs/buildconf.txt | xargs -0 -I% echo '    % \')
+$(xargs -0 -d '\n' -I% echo "    % " < docs/buildconf.txt)
 && make -j\$(nproc) ffmpeg \\
 && make install
 \`\`\`
@@ -45,41 +61,41 @@ $(cat docs/buildconf.txt | xargs -0 -I% echo '    % \')
 
 #### Decoding Codecs
 
-$(cat docs/codecs-decode.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/codecs-decode.txt | sed "s/\n/ /g")
 
 #### Decoding Packages
 
-$(cat docs/decoders.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/decoders.txt | sed "s/\n/ /g")
 
 ### Encode
 
 #### Encoding Codecs
 
-$(cat docs/codecs-encode.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/codecs-encode.txt | sed "s/\n/ /g")
 
 #### Encoding Packages
 
-$(cat docs/encoders.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/encoders.txt | sed "s/\n/ /g")
 
 ### Muxers
 
-$(cat docs/muxers.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/muxers.txt | sed "s/\n/ /g")
 
 ### Demuxers
 
-$(cat docs/demuxers.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/demuxers.txt | sed "s/\n/ /g")
 
 ### Pixel Formats
 
-$(cat docs/pix_fmts.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/pix_fmts.txt | sed "s/\n/ /g")
 
 ### Bitstream Filters
 
-$(cat docs/bsfs.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/bsfs.txt | sed "s/\n/ /g")
 
 ### Hardware Acceleration
 
-$(cat docs/hwaccels.txt | xargs -0 | sed "s/\n/ /g")
+$(xargs -0 -d '\n' < docs/hwaccels.txt | sed "s/\n/ /g")
 
 ## Documentation
 

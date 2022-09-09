@@ -31,6 +31,7 @@
 `aqtitle`
 `argo_asf`
 `argo_brp`
+`argo_cvg`
 `asf`
 `asf_o`
 `ass`
@@ -50,6 +51,7 @@
 `bink`
 `binka`
 `bit`
+`bitpacked`
 `bmp_pipe`
 `bmv`
 `boa`
@@ -72,6 +74,7 @@
 `dds_pipe`
 `derf`
 `dfa`
+`dfpwm`
 `dhav`
 `dirac`
 `dnxhd`
@@ -110,6 +113,7 @@
 `g726le`
 `g729`
 `gdv`
+`gem_pipe`
 `genh`
 `gif`
 `gif_pipe`
@@ -131,6 +135,7 @@
 `ilbc`
 `image2`
 `image2pipe`
+`imf`
 `ingenient`
 `ipmovie`
 `ipu`
@@ -143,6 +148,7 @@
 `jacosub`
 `jpeg_pipe`
 `jpegls_pipe`
+`jpegxl_pipe`
 `jv`
 `kux`
 `kvag`
@@ -204,9 +210,11 @@
 `pam_pipe`
 `pbm_pipe`
 `pcx_pipe`
+`pfm_pipe`
 `pgm_pipe`
 `pgmyuv_pipe`
 `pgx_pipe`
+`phm_pipe`
 `photocd_pipe`
 `pictor_pipe`
 `pjs`
@@ -220,6 +228,7 @@
 `pvf`
 `qcp`
 `qdraw_pipe`
+`qoi_pipe`
 `r3d`
 `rawvideo`
 `realtext`
@@ -245,6 +254,7 @@
 `sbc`
 `sbg`
 `scc`
+`scd`
 `sdp`
 `sdr2`
 `sds`
@@ -293,6 +303,7 @@
 `v210`
 `v210x`
 `vag`
+`vbn_pipe`
 `vc1`
 `vc1test`
 `vidc`

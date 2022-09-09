@@ -13,6 +13,7 @@
 `adpcm_ima_qt`
 `adpcm_ima_ssi`
 `adpcm_ima_wav`
+`adpcm_ima_ws`
 `adpcm_ms`
 `adpcm_swf`
 `adpcm_yamaha`
@@ -30,11 +31,13 @@
 `avrp`
 `avui`
 `ayuv`
+`bitpacked`
 `bmp`
 `cfhd`
 `cinepak`
 `cljr`
 `comfortnoise`
+`dfpwm`
 `dirac`
 `dnxhd`
 `dpx`
@@ -83,6 +86,7 @@
 `pam`
 `pbm`
 `pcm_alaw`
+`pcm_bluray`
 `pcm_dvd`
 `pcm_f32be`
 `pcm_f32le`
@@ -116,9 +120,11 @@
 `pfm`
 `pgm`
 `pgmyuv`
+`phm`
 `png`
 `ppm`
 `prores`
+`qoi`
 `qtrle`
 `r10k`
 `r210`
@@ -132,6 +138,7 @@
 `s302m`
 `sbc`
 `sgi`
+`smc`
 `snow`
 `sonic`
 `sonicls`
@@ -152,6 +159,7 @@
 `v308`
 `v408`
 `v410`
+`vbn`
 `vorbis`
 `vp8`
 `vp9`
