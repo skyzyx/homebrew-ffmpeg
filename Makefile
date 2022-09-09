@@ -1,13 +1,12 @@
-# coreutils/findutils versions
 # https://ryanparman.com/posts/2019/using-gnu-command-line-tools-in-macos-instead-of-freebsd-tools/
-AWK=/usr/local/opt/gawk/libexec/gnubin/awk
-GREP=/usr/local/opt/grep/libexec/gnubin/grep
-NPROC=/usr/local/opt/coreutils/libexec/gnubin/nproc
-SED=/usr/local/opt/gnu-sed/libexec/gnubin/sed
-SORT=/usr/local/opt/coreutils/libexec/gnubin/sort
-TEE=/usr/local/opt/coreutils/libexec/gnubin/tee
-UNIQ=/usr/local/opt/coreutils/libexec/gnubin/uniq
-XARGS=/usr/local/opt/findutils/libexec/gnubin/xargs
+AWK="$(shell brew --prefix gawk)/libexec/gnubin/awk"
+GREP="$(shell brew --prefix grep)/libexec/gnubin/grep"
+NPROC="$(shell brew --prefix coreutils)/libexec/gnubin/nproc"
+SED="$(shell brew --prefix gnu-sed)/libexec/gnubin/sed"
+SORT="$(shell brew --prefix coreutils)/libexec/gnubin/sort"
+TEE="$(shell brew --prefix coreutils)/libexec/gnubin/tee"
+UNIQ="$(shell brew --prefix coreutils)/libexec/gnubin/uniq"
+XARGS="$(shell brew --prefix findutils)/libexec/gnubin/xargs"
 
 #-------------------------------------------------------------------------------
 

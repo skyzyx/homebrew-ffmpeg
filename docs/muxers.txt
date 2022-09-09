@@ -14,6 +14,7 @@
 `aptx`
 `aptx_hd`
 `argo_asf`
+`argo_cvg`
 `asf`
 `asf_stream`
 `ass`
@@ -21,8 +22,10 @@
 `au`
 `audiotoolbox`
 `avi`
+`avif`
 `avm2`
 `avs2`
+`avs3`
 `bit`
 `caf`
 `cavsvideo`
@@ -32,6 +35,7 @@
 `dash`
 `data`
 `daud`
+`dfpwm`
 `dirac`
 `dnxhd`
 `dts`
@@ -103,6 +107,7 @@
 `mxf_opatom`
 `null`
 `nut`
+`obu`
 `oga`
 `ogg`
 `ogv`
@@ -128,7 +133,6 @@
 `scc`
 `sdl,sdl2`
 `segment`
-`singlejpeg`
 `smjpeg`
 `smoothstreaming`
 `sox`
@@ -165,6 +169,7 @@
 `webm_dash_manifest`
 `webp`
 `webvtt`
+`wsaud`
 `wtv`
 `wv`
 `yuv4mpegpipe`

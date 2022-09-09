@@ -1,8 +1,8 @@
 class FfmpegSkyzyx < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
-  url "https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz"
-  sha256 "06b10a183ce5371f915c6bb15b7b1fffbe046e8275099c96affc29e17645d909"
+  url "https://ffmpeg.org/releases/ffmpeg-5.1.1.tar.xz"
+  sha256 "95bf3ff8c496511e71e958fb249e663c8c9c3de583c5bebc0f5a9745abbc0435"
   revision 1
   head "https://github.com/FFmpeg/FFmpeg.git"
 
@@ -31,7 +31,6 @@ class FfmpegSkyzyx < Formula
   depends_on "lame"
   depends_on "libaacs"
   depends_on "libass"
-  depends_on "libav"
   depends_on "libbluray"
   depends_on "libffi"
   depends_on "libgsm"
@@ -56,6 +55,7 @@ class FfmpegSkyzyx < Formula
   depends_on "shtool"
   depends_on "snappy"
   depends_on "speex"
+  depends_on "srt"
   depends_on "tesseract"
   depends_on "theora"
   depends_on "two-lame"
@@ -223,6 +223,7 @@ class FfmpegSkyzyx < Formula
       --enable-libsnappy
       --enable-libsoxr
       --enable-libspeex
+      --enable-libsrt
       --enable-libtesseract
       --enable-libtheora
       --enable-libtwolame
