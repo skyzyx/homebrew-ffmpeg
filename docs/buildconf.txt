@@ -1,4 +1,4 @@
---prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/5.1.1_1
+--prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/5.1.2_1
 --disable-htmlpages
 --disable-indev=jack
 --disable-libjack
@@ -124,6 +124,7 @@
 --enable-libsnappy
 --enable-libsoxr
 --enable-libspeex
+--enable-libsrt
 --enable-libtesseract
 --enable-libtheora
 --enable-libtwolame
@@ -168,7 +169,6 @@
 --enable-pthreads
 --enable-shared
 --enable-small
---enable-libsrt
 --enable-version3
 --enable-videotoolbox
 --extra-version=skyzyx

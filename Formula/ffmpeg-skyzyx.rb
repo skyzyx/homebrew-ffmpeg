@@ -1,8 +1,8 @@
 class FfmpegSkyzyx < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
-  url "https://ffmpeg.org/releases/ffmpeg-5.1.1.tar.xz"
-  sha256 "95bf3ff8c496511e71e958fb249e663c8c9c3de583c5bebc0f5a9745abbc0435"
+  url "https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz"
+  sha256 "619e706d662c8420859832ddc259cd4d4096a48a2ce1eefd052db9e440eef3dc"
   revision 1
   head "https://github.com/FFmpeg/FFmpeg.git"
 

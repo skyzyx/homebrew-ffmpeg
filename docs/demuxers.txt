@@ -327,7 +327,6 @@
 `wtv`
 `wv`
 `wve`
-`x11grab`
 `xa`
 `xbin`
 `xbm_pipe`

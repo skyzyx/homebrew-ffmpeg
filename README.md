@@ -8,7 +8,7 @@ The `ffmpeg` package from homebrew-core supports most modern codecs, including H
 
 This `ffmpeg-skyzyx` package supports all of that plus: [Apple Lossless]; [Animated PNG] (used for animated stickers and Memoji); [SSA/ASS], [SRT], and [WebVTT] subtitles; [Microsoft VC1]; Google [WebP]/[WebM]; [MPEG-DASH] streaming; HTTP Live Streaming ([HLS]); [FreeType]; [Opus] (VOIP audio); and some alternate encoder implementations.
 
-Last built/tested on macOS 12.6 ”Monterey” with Xcode 13.4.1 on both Intel and Apple Silicon CPUs.
+Last built/tested on macOS 13.2 ”Ventura” with Xcode 14.1.0 on both Intel and Apple Silicon CPUs.
 
 ## Installation
 
@@ -20,6 +20,7 @@ brew install skyzyx/ffmpeg/ffmpeg-skyzyx
 Or…
 
 ```bash
+brew unlink ffmpeg
 brew tap skyzyx/ffmpeg
 brew install ffmpeg-skyzyx
 ```
@@ -49,7 +50,7 @@ GLIB_CFLAGS="-I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include" \
 GLIB_LIBS="-lglib-2.0 -lgio-2.0" \
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/opt/X11/lib/pkgconfig \
 ./configure \
-    --prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/5.1.1_1 
+    --prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/5.1.2_1 
     --disable-htmlpages 
     --disable-indev=jack 
     --disable-libjack 
@@ -175,6 +176,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
     --enable-libsnappy 
     --enable-libsoxr 
     --enable-libspeex 
+    --enable-libsrt 
     --enable-libtesseract 
     --enable-libtheora 
     --enable-libtwolame 
@@ -219,7 +221,6 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
     --enable-pthreads 
     --enable-shared 
     --enable-small 
-    --enable-libsrt 
     --enable-version3 
     --enable-videotoolbox 
     --extra-version=skyzyx 
@@ -255,7 +256,7 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/op
 
 ### Demuxers
 
-`3dostr` `4xm` `aa` `aac` `aax` `ac3` `ace` `acm` `act` `adf` `adp` `ads` `adx` `aea` `afc` `aiff` `aix` `alaw` `alias_pix` `alp` `amr` `amrnb` `amrwb` `anm` `apc` `ape` `apm` `apng` `aptx` `aptx_hd` `aqtitle` `argo_asf` `argo_brp` `argo_cvg` `asf` `asf_o` `ass` `ast` `au` `av1` `avfoundation` `avi` `avr` `avs` `avs2` `avs3` `bethsoftvid` `bfi` `bfstm` `bin` `bink` `binka` `bit` `bitpacked` `bmp_pipe` `bmv` `boa` `brender_pix` `brstm` `c93` `caf` `cavsvideo` `cdg` `cdxl` `cine` `codec2` `codec2raw` `concat` `cri_pipe` `dash` `data` `daud` `dcstr` `dds_pipe` `derf` `dfa` `dfpwm` `dhav` `dirac` `dnxhd` `dpx_pipe` `dsf` `dsicin` `dss` `dts` `dtshd` `dv` `dvbsub` `dvbtxt` `dxa` `ea` `ea_cdata` `eac3` `epaf` `exr_pipe` `f32be` `f32le` `f64be` `f64le` `ffmetadata` `film_cpk` `filmstrip` `fits` `flac` `flic` `flv` `frm` `fsb` `fwse` `g722` `g723_1` `g726` `g726le` `g729` `gdv` `gem_pipe` `genh` `gif` `gif_pipe` `gsm` `gxf` `h261` `h263` `h264` `hca` `hcom` `hevc` `hls` `hnm` `ico` `idcin` `idf` `iff` `ifv` `ilbc` `image2` `image2pipe` `imf` `ingenient` `ipmovie` `ipu` `ircam` `iss` `iv8` `ivf` `ivr` `j2k_pipe` `jacosub` `jpeg_pipe` `jpegls_pipe` `jpegxl_pipe` `jv` `kux` `kvag` `lavfi` `libmodplug` `live_flv` `lmlm4` `loas` `lrc` `luodat` `lvf` `lxf` `m4v` `matroska,webm` `mca` `mcc` `mgsts` `microdvd` `mjpeg` `mjpeg_2000` `mlp` `mlv` `mm` `mmf` `mods` `moflex` `mov,mp4,m4a,3gp,3g2,mj2` `mp3` `mpc` `mpc8` `mpeg` `mpegts` `mpegtsraw` `mpegvideo` `mpjpeg` `mpl2` `mpsub` `msf` `msnwctcp` `msp` `mtaf` `mtv` `mulaw` `musx` `mv` `mvi` `mxf` `mxg` `nc` `nistsphere` `nsp` `nsv` `nut` `nuv` `obu` `ogg` `oma` `paf` `pam_pipe` `pbm_pipe` `pcx_pipe` `pfm_pipe` `pgm_pipe` `pgmyuv_pipe` `pgx_pipe` `phm_pipe` `photocd_pipe` `pictor_pipe` `pjs` `pmp` `png_pipe` `pp_bnk` `ppm_pipe` `psd_pipe` `psxstr` `pva` `pvf` `qcp` `qdraw_pipe` `qoi_pipe` `r3d` `rawvideo` `realtext` `redspark` `rl2` `rm` `roq` `rpl` `rsd` `rso` `rtp` `rtsp` `s16be` `s16le` `s24be` `s24le` `s32be` `s32le` `s337m` `s8` `sami` `sap` `sbc` `sbg` `scc` `scd` `sdp` `sdr2` `sds` `sdx` `ser` `sga` `sgi_pipe` `shn` `siff` `simbiosis_imx` `sln` `smjpeg` `smk` `smush` `sol` `sox` `spdif` `srt` `stl` `subviewer` `subviewer1` `sunrast_pipe` `sup` `svag` `svg_pipe` `svs` `swf` `tak` `tedcaptions` `thp` `tiertexseq` `tiff_pipe` `tmv` `truehd` `tta` `tty` `txd` `ty` `u16be` `u16le` `u24be` `u24le` `u32be` `u32le` `u8` `v210` `v210x` `vag` `vbn_pipe` `vc1` `vc1test` `vidc` `vividas` `vivo` `vmd` `vobsub` `voc` `vpk` `vplayer` `vqf` `w64` `wav` `wc3movie` `webm_dash_manifest` `webp_pipe` `webvtt` `wsaud` `wsd` `wsvqa` `wtv` `wv` `wve` `x11grab` `xa` `xbin` `xbm_pipe` `xmv` `xpm_pipe` `xvag` `xwd_pipe` `xwma` `yop` `yuv4mpegpipe`
+`3dostr` `4xm` `aa` `aac` `aax` `ac3` `ace` `acm` `act` `adf` `adp` `ads` `adx` `aea` `afc` `aiff` `aix` `alaw` `alias_pix` `alp` `amr` `amrnb` `amrwb` `anm` `apc` `ape` `apm` `apng` `aptx` `aptx_hd` `aqtitle` `argo_asf` `argo_brp` `argo_cvg` `asf` `asf_o` `ass` `ast` `au` `av1` `avfoundation` `avi` `avr` `avs` `avs2` `avs3` `bethsoftvid` `bfi` `bfstm` `bin` `bink` `binka` `bit` `bitpacked` `bmp_pipe` `bmv` `boa` `brender_pix` `brstm` `c93` `caf` `cavsvideo` `cdg` `cdxl` `cine` `codec2` `codec2raw` `concat` `cri_pipe` `dash` `data` `daud` `dcstr` `dds_pipe` `derf` `dfa` `dfpwm` `dhav` `dirac` `dnxhd` `dpx_pipe` `dsf` `dsicin` `dss` `dts` `dtshd` `dv` `dvbsub` `dvbtxt` `dxa` `ea` `ea_cdata` `eac3` `epaf` `exr_pipe` `f32be` `f32le` `f64be` `f64le` `ffmetadata` `film_cpk` `filmstrip` `fits` `flac` `flic` `flv` `frm` `fsb` `fwse` `g722` `g723_1` `g726` `g726le` `g729` `gdv` `gem_pipe` `genh` `gif` `gif_pipe` `gsm` `gxf` `h261` `h263` `h264` `hca` `hcom` `hevc` `hls` `hnm` `ico` `idcin` `idf` `iff` `ifv` `ilbc` `image2` `image2pipe` `imf` `ingenient` `ipmovie` `ipu` `ircam` `iss` `iv8` `ivf` `ivr` `j2k_pipe` `jacosub` `jpeg_pipe` `jpegls_pipe` `jpegxl_pipe` `jv` `kux` `kvag` `lavfi` `libmodplug` `live_flv` `lmlm4` `loas` `lrc` `luodat` `lvf` `lxf` `m4v` `matroska,webm` `mca` `mcc` `mgsts` `microdvd` `mjpeg` `mjpeg_2000` `mlp` `mlv` `mm` `mmf` `mods` `moflex` `mov,mp4,m4a,3gp,3g2,mj2` `mp3` `mpc` `mpc8` `mpeg` `mpegts` `mpegtsraw` `mpegvideo` `mpjpeg` `mpl2` `mpsub` `msf` `msnwctcp` `msp` `mtaf` `mtv` `mulaw` `musx` `mv` `mvi` `mxf` `mxg` `nc` `nistsphere` `nsp` `nsv` `nut` `nuv` `obu` `ogg` `oma` `paf` `pam_pipe` `pbm_pipe` `pcx_pipe` `pfm_pipe` `pgm_pipe` `pgmyuv_pipe` `pgx_pipe` `phm_pipe` `photocd_pipe` `pictor_pipe` `pjs` `pmp` `png_pipe` `pp_bnk` `ppm_pipe` `psd_pipe` `psxstr` `pva` `pvf` `qcp` `qdraw_pipe` `qoi_pipe` `r3d` `rawvideo` `realtext` `redspark` `rl2` `rm` `roq` `rpl` `rsd` `rso` `rtp` `rtsp` `s16be` `s16le` `s24be` `s24le` `s32be` `s32le` `s337m` `s8` `sami` `sap` `sbc` `sbg` `scc` `scd` `sdp` `sdr2` `sds` `sdx` `ser` `sga` `sgi_pipe` `shn` `siff` `simbiosis_imx` `sln` `smjpeg` `smk` `smush` `sol` `sox` `spdif` `srt` `stl` `subviewer` `subviewer1` `sunrast_pipe` `sup` `svag` `svg_pipe` `svs` `swf` `tak` `tedcaptions` `thp` `tiertexseq` `tiff_pipe` `tmv` `truehd` `tta` `tty` `txd` `ty` `u16be` `u16le` `u24be` `u24le` `u32be` `u32le` `u8` `v210` `v210x` `vag` `vbn_pipe` `vc1` `vc1test` `vidc` `vividas` `vivo` `vmd` `vobsub` `voc` `vpk` `vplayer` `vqf` `w64` `wav` `wc3movie` `webm_dash_manifest` `webp_pipe` `webvtt` `wsaud` `wsd` `wsvqa` `wtv` `wv` `wve` `xa` `xbin` `xbm_pipe` `xmv` `xpm_pipe` `xvag` `xwd_pipe` `xwma` `yop` `yuv4mpegpipe`
 
 ### Pixel Formats
 
