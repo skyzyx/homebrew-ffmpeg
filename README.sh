@@ -23,12 +23,14 @@ brew install skyzyx/ffmpeg/ffmpeg-skyzyx
 Or install via URL (which will not receive updates):
 
 \`\`\`bash
+brew unlink ffmpeg
 brew install https://raw.githubusercontent.com/skyzyx/homebrew-ffmpeg/master/Formula/ffmpeg-skyzyx.rb
 \`\`\`
 
 Or, if you’re debugging with a local clone (or you’re _Future Ryan_ and you’re trying to remember how to do this:)
 
 \`\`\`bash
+brew unlink ffmpeg
 brew install --verbose --debug --build-from-source ./Formula/ffmpeg-skyzyx.rb
 \`\`\`
 
