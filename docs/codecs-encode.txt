@@ -21,6 +21,7 @@
 `alias_pix`
 `amr_nb`
 `amv`
+`anull`
 `apng`
 `aptx_hd`
 `aptx`
@@ -63,6 +64,7 @@
 `h263p`
 `h264`
 `hap`
+`hdr`
 `hevc`
 `huffyuv`
 `ilbc`
@@ -160,10 +162,12 @@
 `v408`
 `v410`
 `vbn`
+`vnull`
 `vorbis`
 `vp8`
 `vp9`
 `wavpack`
+`wbmp`
 `webp`
 `webvtt`
 `wmav1`

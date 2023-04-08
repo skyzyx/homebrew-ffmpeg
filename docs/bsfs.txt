@@ -4,6 +4,7 @@
 `av1_metadata`
 `chomp`
 `dca_core`
+`dts2pts`
 `dump_extra`
 `dv_error_marker`
 `eac3_core`
@@ -16,6 +17,7 @@
 `hevc_metadata`
 `hevc_mp4toannexb`
 `imxdump`
+`media100_to_mjpegb`
 `mjpeg2jpeg`
 `mjpegadump`
 `mov2textsub`

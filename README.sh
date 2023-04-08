@@ -11,21 +11,13 @@ The \`ffmpeg\` package from homebrew-core supports most modern codecs, including
 
 This \`ffmpeg-skyzyx\` package supports all of that plus: [Apple Lossless]; [Animated PNG] (used for animated stickers and Memoji); [SSA/ASS], [SRT], and [WebVTT] subtitles; [Microsoft VC1]; Google [WebP]/[WebM]; [MPEG-DASH] streaming; HTTP Live Streaming ([HLS]); [FreeType]; [Opus] (VOIP audio); and some alternate encoder implementations.
 
-Last built/tested on macOS 13.2 ”Ventura” with Xcode 14.1.0 on both Intel and Apple Silicon CPUs.
+Last built/tested on macOS 13.3 ”Ventura” with Xcode 14.1.0 on both Intel and Apple Silicon CPUs.
 
 ## Installation
 
 \`\`\`bash
 brew unlink ffmpeg
 brew install skyzyx/ffmpeg/ffmpeg-skyzyx
-\`\`\`
-
-Or…
-
-\`\`\`bash
-brew unlink ffmpeg
-brew tap skyzyx/ffmpeg
-brew install ffmpeg-skyzyx
 \`\`\`
 
 Or install via URL (which will not receive updates):

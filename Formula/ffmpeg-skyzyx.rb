@@ -1,8 +1,8 @@
 class FfmpegSkyzyx < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
-  url "https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz"
-  sha256 "619e706d662c8420859832ddc259cd4d4096a48a2ce1eefd052db9e440eef3dc"
+  url "https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz"
+  sha256 "57be87c22d9b49c112b6d24bc67d42508660e6b718b3db89c44e47e289137082"
   revision 1
   head "https://github.com/FFmpeg/FFmpeg.git"
 
@@ -50,7 +50,7 @@ class FfmpegSkyzyx < Formula
   depends_on "opus"
   depends_on "rtmpdump"
   depends_on "rubberband"
-  depends_on "sdl"
+  depends_on "sdl12-compat"
   depends_on "sdl2"
   depends_on "shtool"
   depends_on "snappy"

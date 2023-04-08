@@ -20,6 +20,7 @@
 `alac`
 `alias_pix`
 `amv`
+`anull`
 `apng`
 `aptx_hd`
 `aptx`
@@ -61,6 +62,7 @@
 `h263p`
 `h264_videotoolbox`
 `hap`
+`hdr`
 `hevc_videotoolbox`
 `huffyuv`
 `ilbc_at`
@@ -185,8 +187,10 @@
 `v410`
 `vbn`
 `vc2`
+`vnull`
 `vorbis`
 `wavpack`
+`wbmp`
 `webvtt`
 `wmav1`
 `wmav2`

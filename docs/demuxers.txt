@@ -22,6 +22,7 @@
 `amrnb`
 `amrwb`
 `anm`
+`apac`
 `apc`
 `ape`
 `apm`
@@ -55,6 +56,7 @@
 `bmp_pipe`
 `bmv`
 `boa`
+`bonk`
 `brender_pix`
 `brstm`
 `c93`
@@ -124,6 +126,7 @@
 `h264`
 `hca`
 `hcom`
+`hdr_pipe`
 `hevc`
 `hls`
 `hnm`
@@ -152,6 +155,7 @@
 `jv`
 `kux`
 `kvag`
+`laf`
 `lavfi`
 `libmodplug`
 `live_flv`
@@ -233,6 +237,7 @@
 `rawvideo`
 `realtext`
 `redspark`
+`rka`
 `rl2`
 `rm`
 `roq`
@@ -255,6 +260,7 @@
 `sbg`
 `scc`
 `scd`
+`sdns`
 `sdp`
 `sdr2`
 `sds`
@@ -316,7 +322,9 @@
 `vplayer`
 `vqf`
 `w64`
+`wady`
 `wav`
+`wavarc`
 `wc3movie`
 `webm_dash_manifest`
 `webp_pipe`
@@ -327,9 +335,11 @@
 `wtv`
 `wv`
 `wve`
+`x11grab`
 `xa`
 `xbin`
 `xbm_pipe`
+`xmd`
 `xmv`
 `xpm_pipe`
 `xvag`

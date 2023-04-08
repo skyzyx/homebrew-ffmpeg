@@ -57,6 +57,7 @@
 `adpcm_thp`
 `adpcm_vima`
 `adpcm_xa`
+`adpcm_xmd`
 `adpcm_yamaha`
 `adpcm_zork`
 `agm`
@@ -68,6 +69,8 @@
 `amv`
 `anm`
 `ansi`
+`anull`
+`apac`
 `ape`
 `apng`
 `aptx_hd`
@@ -102,9 +105,11 @@
 `bmp`
 `bmv_audio`
 `bmv_video`
+`bonk`
 `brender_pix`
 `c93`
 `cavs`
+`cbd2_dpcm`
 `cdgraphics`
 `cdtoons`
 `cdxl`
@@ -163,6 +168,7 @@
 `fmvc`
 `fraps`
 `frwu`
+`ftr`
 `g2m`
 `g723_1`
 `g729`
@@ -181,6 +187,7 @@
 `hca`
 `hcom`
 `hdmv_pgs_subtitle`
+`hdr`
 `hevc`
 `hnm4video`
 `hq_hqa`
@@ -218,9 +225,11 @@
 `mad`
 `magicyuv`
 `mdec`
+`media100`
 `metasound`
 `microdvd`
 `mimic`
+`misc4`
 `mjpeg`
 `mjpegb`
 `mlp`
@@ -334,6 +343,7 @@
 `rasc`
 `rawvideo`
 `realtext`
+`rka`
 `rl2`
 `roq_dpcm`
 `roq`
@@ -416,6 +426,7 @@
 `vmdaudio`
 `vmdvideo`
 `vmnc`
+`vnull`
 `vorbis`
 `vp3`
 `vp4`
@@ -427,8 +438,12 @@
 `vp8`
 `vp9`
 `vplayer`
+`vqc`
+`wady_dpcm`
+`wavarc`
 `wavesynth`
 `wavpack`
+`wbmp`
 `wcmv`
 `webp`
 `webvtt`
