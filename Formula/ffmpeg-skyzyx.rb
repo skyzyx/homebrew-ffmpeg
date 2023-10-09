@@ -77,6 +77,10 @@ class FfmpegSkyzyx < Formula
     # https://trac.ffmpeg.org/ticket/8073#comment:12
     ENV.append_to_cflags "-fno-stack-check" if DevelopmentTools.clang_build_version >= 1010
 
+    # Work around Xcode 15 bug
+    # https://github.com/homebrew-ffmpeg/homebrew-ffmpeg/commit/52b300990077c719e64311cea0b763bf83a4e2f7
+    ENV.append "LDFLAGS", "-Wl,-ld_classic" if DevelopmentTools.clang_build_version >= 1500
+
     # # FreeType
     # ENV.append_to_cflags `freetype-config --cflags`
     # ENV.append "LDFLAGS", `freetype-config --libs`
