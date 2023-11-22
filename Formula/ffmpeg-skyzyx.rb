@@ -1,18 +1,14 @@
 class FfmpegSkyzyx < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
-  url "https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz"
-  sha256 "57be87c22d9b49c112b6d24bc67d42508660e6b718b3db89c44e47e289137082"
-  revision 1
+  url "https://ffmpeg.org/releases/ffmpeg-6.1.tar.xz"
+  sha256 "488c76e57dd9b3bee901f71d5c95eaf1db4a5a31fe46a28654e837144207c270"
   head "https://github.com/FFmpeg/FFmpeg.git"
-
-  conflicts_with "ffmpeg", :because => "ffmpeg-skyzyx also ships a ffmpeg binary"
 
   depends_on "make" => :build
   depends_on "nasm" => :build
   depends_on "pkg-config" => :build
   depends_on "texi2html" => :build
-
   depends_on "aom"
   depends_on "automake"
   depends_on "coreutils"
@@ -70,6 +66,8 @@ class FfmpegSkyzyx < Formula
   depends_on "zeromq"
   depends_on "zimg"
   depends_on "zlib"
+
+  conflicts_with "ffmpeg", because: "ffmpeg-skyzyx also ships a ffmpeg binary"
 
   def install
     # Work around Xcode 11 clang bug
@@ -287,7 +285,7 @@ class FfmpegSkyzyx < Formula
     bin.install Dir["tools/*"].select { |f| File.executable? f }
 
     # Fix for Non-executables that were installed to bin/
-    mv bin/"python", pkgshare/"python", :force => true
+    mv bin/"python", pkgshare/"python", force: true
   end
 
   test do
