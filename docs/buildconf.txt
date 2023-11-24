@@ -1,4 +1,4 @@
---prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/6.0_1
+--prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/6.1
 --disable-htmlpages
 --disable-indev=jack
 --disable-libjack

@@ -2,6 +2,7 @@
 `3gp`
 `a64`
 `ac3`
+`ac4`
 `adts`
 `adx`
 `aiff`
@@ -42,6 +43,7 @@
 `dv`
 `dvd`
 `eac3`
+`evc`
 `f32be`
 `f32le`
 `f4v`
@@ -162,6 +164,7 @@
 `vidc`
 `vob`
 `voc`
+`vvc`
 `w64`
 `wav`
 `webm`

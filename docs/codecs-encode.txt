@@ -82,6 +82,7 @@
 `mpeg4`
 `msmpeg4v2`
 `msmpeg4v3`
+`msrle`
 `msvideo1`
 `nellymoser`
 `opus`

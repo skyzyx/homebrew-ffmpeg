@@ -8,6 +8,7 @@
 `dump_extra`
 `dv_error_marker`
 `eac3_core`
+`evc_frame_merge`
 `extract_extradata`
 `filter_units`
 `h264_metadata`
@@ -39,3 +40,5 @@
 `vp9_raw_reorder`
 `vp9_superframe_split`
 `vp9_superframe`
+`vvc_metadata`
+`vvc_mp4toannexb`

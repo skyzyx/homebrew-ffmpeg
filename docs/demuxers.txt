@@ -4,6 +4,7 @@
 `aac`
 `aax`
 `ac3`
+`ac4`
 `ace`
 `acm`
 `act`
@@ -94,6 +95,7 @@
 `ea_cdata`
 `eac3`
 `epaf`
+`evc`
 `exr_pipe`
 `f32be`
 `f32le`
@@ -151,6 +153,7 @@
 `jacosub`
 `jpeg_pipe`
 `jpegls_pipe`
+`jpegxl_anim`
 `jpegxl_pipe`
 `jv`
 `kux`
@@ -210,10 +213,12 @@
 `obu`
 `ogg`
 `oma`
+`osq`
 `paf`
 `pam_pipe`
 `pbm_pipe`
 `pcx_pipe`
+`pdv`
 `pfm_pipe`
 `pgm_pipe`
 `pgmyuv_pipe`
@@ -306,6 +311,7 @@
 `u32be`
 `u32le`
 `u8`
+`usm`
 `v210`
 `v210x`
 `vag`
@@ -321,6 +327,7 @@
 `vpk`
 `vplayer`
 `vqf`
+`vvc`
 `w64`
 `wady`
 `wav`

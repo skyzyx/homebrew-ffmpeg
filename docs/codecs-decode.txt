@@ -273,6 +273,7 @@
 `notchlc`
 `nuv`
 `opus`
+`osq`
 `paf_audio`
 `paf_video`
 `pam`
@@ -313,6 +314,7 @@
 `pcm_u8`
 `pcm_vidc`
 `pcx`
+`pdv`
 `pfm`
 `pgm`
 `pgmyuv`
@@ -349,6 +351,7 @@
 `roq`
 `rpza`
 `rscc`
+`rtv1`
 `rv10`
 `rv20`
 `rv30`
@@ -425,6 +428,7 @@
 `vixl`
 `vmdaudio`
 `vmdvideo`
+`vmix`
 `vmnc`
 `vnull`
 `vorbis`
