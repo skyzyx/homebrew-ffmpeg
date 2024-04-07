@@ -29,7 +29,6 @@
 `asv2`
 `avrp`
 `avui`
-`ayuv`
 `bitpacked`
 `bmp`
 `cfhd`
@@ -43,6 +42,7 @@
 `dvbsub`
 `dvdsub`
 `dvvideo`
+`dxv`
 `eac3`
 `exr`
 `ffv1`

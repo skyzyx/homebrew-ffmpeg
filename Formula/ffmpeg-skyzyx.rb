@@ -1,8 +1,8 @@
 class FfmpegSkyzyx < Formula
   desc "Play, record, convert, and stream audio and video"
   homepage "https://ffmpeg.org/"
-  url "https://ffmpeg.org/releases/ffmpeg-6.1.tar.xz"
-  sha256 "488c76e57dd9b3bee901f71d5c95eaf1db4a5a31fe46a28654e837144207c270"
+  url "https://ffmpeg.org//releases/ffmpeg-7.0.tar.xz"
+  sha256 "4426a94dd2c814945456600c8adfc402bee65ec14a70e8c531ec9a2cd651da7b"
   head "https://github.com/FFmpeg/FFmpeg.git"
 
   depends_on "make" => :build
@@ -39,7 +39,6 @@ class FfmpegSkyzyx < Formula
   depends_on "libvo-aacenc"
   depends_on "libvorbis"
   depends_on "libvpx"
-  depends_on "libxml2"
   depends_on "opencore-amr"
   depends_on "openh264"
   depends_on "openjpeg"
@@ -65,9 +64,23 @@ class FfmpegSkyzyx < Formula
   depends_on "yasm"
   depends_on "zeromq"
   depends_on "zimg"
-  depends_on "zlib"
+
+  uses_from_macos "bzip2"
+  uses_from_macos "libxml2"
+  uses_from_macos "zlib"
+
+  on_intel do
+    depends_on "nasm" => :build
+  end
 
   conflicts_with "ffmpeg", because: "ffmpeg-skyzyx also ships a ffmpeg binary"
+
+  # Fix for QtWebEngine, do not remove
+  # https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270209
+  patch do
+    url "https://gitlab.archlinux.org/archlinux/packaging/packages/ffmpeg/-/raw/5670ccd86d3b816f49ebc18cab878125eca2f81f/add-av_stream_get_first_dts-for-chromium.patch"
+    sha256 "57e26caced5a1382cb639235f9555fc50e45e7bf8333f7c9ae3d49b3241d3f77"
+  end
 
   def install
     # Work around Xcode 11 clang bug
@@ -105,6 +118,7 @@ class FfmpegSkyzyx < Formula
       --disable-libjack
       --disable-podpages
       --disable-txtpages
+      --enable-audiotoolbox
       --enable-decoder=aac
       --enable-decoder=ac3
       --enable-decoder=alac
@@ -172,10 +186,10 @@ class FfmpegSkyzyx < Formula
       --enable-encoder=h264_videotoolbox
       --enable-encoder=hevc_videotoolbox
       --enable-encoder=jpeg2000
-      --enable-encoder=libmp3lame
-      --enable-encoder=libtheora
       --enable-encoder=libaom_av1
+      --enable-encoder=libmp3lame
       --enable-encoder=libsvtav1
+      --enable-encoder=libtheora
       --enable-encoder=libvorbis
       --enable-encoder=libvpx_vp8
       --enable-encoder=libvpx_vp9
@@ -204,7 +218,6 @@ class FfmpegSkyzyx < Formula
       --enable-hwaccel=hevc_videotoolbox
       --enable-hwaccel=mpeg2_videotoolbox
       --enable-hwaccel=mpeg4_videotoolbox
-      --enable-libxml2
       --enable-libaom
       --enable-libass
       --enable-libbluray
@@ -235,6 +248,7 @@ class FfmpegSkyzyx < Formula
       --enable-libwebp
       --enable-libx264
       --enable-libx265
+      --enable-libxml2
       --enable-libxvid
       --enable-libzimg
       --enable-libzmq
@@ -267,6 +281,7 @@ class FfmpegSkyzyx < Formula
       --enable-muxer=webp
       --enable-muxer=webvtt
       --enable-nonfree
+      --enable-opencl
       --enable-pthreads
       --enable-shared
       --enable-small
@@ -274,8 +289,16 @@ class FfmpegSkyzyx < Formula
       --enable-videotoolbox
       --extra-version=skyzyx
       --cc=#{ENV.cc}
-      --host-cflags="#{ENV.cflags.strip}"
+      --cxx=#{ENV.cxx}
+      --extra-cflags="-I#{HOMEBREW_PREFIX}/include"
+      --extra-ldflags="-L#{HOMEBREW_PREFIX}/include"
+      --host-cflags=#{ENV.cflags}
+      --host-ldflags=#{ENV.ldflags}
     ]
+
+    if OS.mac?
+      args << "--enable-neon" if Hardware::CPU.arm?
+    end
 
     system "./configure", *args
     system "make", "install"

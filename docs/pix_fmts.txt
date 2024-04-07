@@ -35,6 +35,7 @@
 `cuda`
 `d3d11`
 `d3d11va_vld`
+`d3d12`
 `drm_prime`
 `dxva2_vld`
 `gbrap10be`
@@ -144,7 +145,6 @@
 `xv30le`
 `xv36be`
 `xv36le`
-`xvmc`
 `xyz12be`
 `xyz12le`
 `y210be`

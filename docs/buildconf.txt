@@ -1,9 +1,10 @@
---prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/6.1
+--prefix=/opt/homebrew/Cellar/ffmpeg-skyzyx/7.0
 --disable-htmlpages
 --disable-indev=jack
 --disable-libjack
 --disable-podpages
 --disable-txtpages
+--enable-audiotoolbox
 --enable-decoder=aac
 --enable-decoder=ac3
 --enable-decoder=alac
@@ -71,10 +72,10 @@
 --enable-encoder=h264_videotoolbox
 --enable-encoder=hevc_videotoolbox
 --enable-encoder=jpeg2000
---enable-encoder=libmp3lame
---enable-encoder=libtheora
 --enable-encoder=libaom_av1
+--enable-encoder=libmp3lame
 --enable-encoder=libsvtav1
+--enable-encoder=libtheora
 --enable-encoder=libvorbis
 --enable-encoder=libvpx_vp8
 --enable-encoder=libvpx_vp9
@@ -103,7 +104,6 @@
 --enable-hwaccel=hevc_videotoolbox
 --enable-hwaccel=mpeg2_videotoolbox
 --enable-hwaccel=mpeg4_videotoolbox
---enable-libxml2
 --enable-libaom
 --enable-libass
 --enable-libbluray
@@ -134,6 +134,7 @@
 --enable-libwebp
 --enable-libx264
 --enable-libx265
+--enable-libxml2
 --enable-libxvid
 --enable-libzimg
 --enable-libzmq
@@ -166,6 +167,7 @@
 --enable-muxer=webp
 --enable-muxer=webvtt
 --enable-nonfree
+--enable-opencl
 --enable-pthreads
 --enable-shared
 --enable-small
@@ -173,4 +175,5 @@
 --enable-videotoolbox
 --extra-version=skyzyx
 --cc=clang
---host-cflags='
+--cxx=clang++
+--extra-cflags='

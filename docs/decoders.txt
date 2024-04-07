@@ -98,7 +98,6 @@
 `avrp`
 `avs`
 `avui`
-`ayuv`
 `bethsoftvid`
 `bfi`
 `binkaudio_dct`
@@ -231,6 +230,7 @@
 `kgv1`
 `kmvc`
 `lagarith`
+`lead`
 `libaom-av1`
 `libdav1d`
 `libfdk_aac`
@@ -374,6 +374,7 @@
 `qdmc_at`
 `qdmc`
 `qdraw`
+`qoa`
 `qoi`
 `qpeg`
 `qtrle`
@@ -481,6 +482,7 @@
 `vplayer`
 `vqavideo`
 `vqc`
+`vvc`
 `wady_dpcm`
 `wavarc`
 `wavesynth`

@@ -94,7 +94,6 @@
 `avrp`
 `avs`
 `avui`
-`ayuv`
 `bethsoftvid`
 `bfi`
 `binkaudio_dct`
@@ -217,6 +216,7 @@
 `kgv1`
 `kmvc`
 `lagarith`
+`lead`
 `loco`
 `lscr`
 `m101`
@@ -334,6 +334,7 @@
 `qdm2`
 `qdmc`
 `qdraw`
+`qoa`
 `qoi`
 `qpeg`
 `qtrle`
@@ -443,6 +444,7 @@
 `vp9`
 `vplayer`
 `vqc`
+`vvc`
 `wady_dpcm`
 `wavarc`
 `wavesynth`

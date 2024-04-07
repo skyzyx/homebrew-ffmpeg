@@ -5,6 +5,7 @@
 `ac4`
 `adts`
 `adx`
+`aea`
 `aiff`
 `alaw`
 `alp`
@@ -21,7 +22,6 @@
 `ass`
 `ast`
 `au`
-`audiotoolbox`
 `avi`
 `avif`
 `avm2`
@@ -51,7 +51,6 @@
 `f64le`
 `ffmetadata`
 `fifo`
-`fifo_test`
 `film_cpk`
 `filmstrip`
 `fits`
@@ -74,6 +73,7 @@
 `hds`
 `hevc`
 `hls`
+`iamf`
 `ico`
 `ilbc`
 `image2`
@@ -117,6 +117,7 @@
 `opus`
 `psp`
 `rawvideo`
+`rcwt`
 `rm`
 `roq`
 `rso`
@@ -133,7 +134,6 @@
 `sap`
 `sbc`
 `scc`
-`sdl,sdl2`
 `segment`
 `smjpeg`
 `smoothstreaming`

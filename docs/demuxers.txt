@@ -40,7 +40,7 @@
 `ast`
 `au`
 `av1`
-`avfoundation`
+`d`
 `avi`
 `avr`
 `avs`
@@ -132,6 +132,7 @@
 `hevc`
 `hls`
 `hnm`
+`iamf`
 `ico`
 `idcin`
 `idf`
@@ -159,7 +160,7 @@
 `kux`
 `kvag`
 `laf`
-`lavfi`
+`d`
 `libmodplug`
 `live_flv`
 `lmlm4`
@@ -237,6 +238,7 @@
 `pvf`
 `qcp`
 `qdraw_pipe`
+`qoa`
 `qoi_pipe`
 `r3d`
 `rawvideo`
@@ -342,7 +344,7 @@
 `wtv`
 `wv`
 `wve`
-`x11grab`
+`d`
 `xa`
 `xbin`
 `xbm_pipe`

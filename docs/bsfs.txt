@@ -22,7 +22,6 @@
 `mjpeg2jpeg`
 `mjpegadump`
 `mov2textsub`
-`mp3decomp`
 `mpeg2_metadata`
 `mpeg4_unpack_bframes`
 `noise`
@@ -33,6 +32,7 @@
 `prores_metadata`
 `remove_extra`
 `setts`
+`showinfo`
 `text2movsub`
 `trace_headers`
 `truehd_core`
